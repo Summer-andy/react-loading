@@ -1,13 +1,12 @@
-# H-UI
+# React-Loading
 
 ### 项目介绍
-前端组件库
-
+基于React的Loading组件
 ### 使用教程
 
 #### 开发
 ```bash
-$ git clone http://42.159.123.242:8929/hc-frontend/h-ui.git
+$ git clone https://github.com/sixiaodong123/react-loading
 $ npm run dev
 ```
 
