@@ -13,8 +13,5 @@ storiesOf('BoxLoading', module)
           <BoxLoading></BoxLoading>
         </Container>
       );
-    },
-    {
-      notes: 'This is the button of Ant Design'
     }
   );
