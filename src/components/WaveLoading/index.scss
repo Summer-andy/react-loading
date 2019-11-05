@@ -1,0 +1,70 @@
+@mixin commonStyle() {
+  background-color: #00adb5;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  margin-left: 5px;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.load-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+    .boxLoading1 {
+      @include commonStyle();
+      -webkit-animation-delay: -1.2s;
+      animation-delay: -1.2s;
+    }
+    .boxLoading2 {
+      @include commonStyle();
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+    .boxLoading3 {
+      @include commonStyle();
+      -webkit-animation-delay: -1s;
+      animation-delay: -1s;
+    }
+    .boxLoading4 {
+      @include commonStyle();
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+    .boxLoading5 {
+      @include commonStyle();
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+  }
+}
+
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}

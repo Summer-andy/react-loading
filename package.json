@@ -1,0 +1,76 @@
+{
+  "name": "react-loading",
+  "version": "1.0.0",
+  "description": "A React component library.",
+  "main": "dist/loading.js",
+  "publishConfig": {
+    "registry": ""
+  },
+  "author": "Andy",
+  "scripts": {
+    "prepare": "npm run build",
+    "predev": "yarn install --silent",
+    "dev": "npm run storybook",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --env production",
+    "storybook": "start-storybook -p 9001",
+    "build-storybook": "build-storybook",
+    "release": "standard-version",
+    "release:alpha": "npm run release -- --prerelease alpha"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "files": [
+    "dist"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-storysource": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@tulipjs/eslint-config": "^1.1.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.0",
+    "css-loader": "^1.0.0",
+    "husky": "^3.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-safe-parser": "^4.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "standard-version": "^6.0.1",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
