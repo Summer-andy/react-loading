@@ -1,0 +1,126 @@
+$color: #c2f5d3;
+$inColor: #f9c094;
+
+.load-block {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  animation: rotate 8s infinite ease-in-out;
+  .item1 {
+    width: 20px;
+    height: 20px;
+    animation: changeColor1 2s infinite ease-in-out;
+  }
+  .item2 {
+    width: 20px;
+    height: 20px;
+    animation: changeColor2 2s infinite ease-in-out;
+  }
+  .item3 {
+    width: 20px;
+    height: 20px;
+    animation: changeColor3 2s infinite ease-in-out;
+  }
+  .item4 {
+    width: 20px;
+    height: 20px;
+    animation: changeColor4 2s infinite ease-in-out;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  }
+  25% {
+    transform:rotate(90deg);
+  }
+  50% {
+    transform:rotate(180deg);
+  }
+  75% {
+    transform:rotate(270deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+
+@keyframes changeColor1{
+  0% {
+    background:$inColor;
+  }
+  25% {
+    background:$color
+  }
+  50% {
+    background:$color
+  }
+  75% {
+    background:$color
+  }
+  100% {
+    background:$inColor;
+  }
+}
+
+
+@keyframes changeColor2{
+  0% {
+    background:$color
+  }
+  25% {
+    background:$inColor;
+  }
+  50% {
+    background:$color
+  }
+  75% {
+    background:$color
+  }
+  100% {
+    background:$color
+  }
+}
+
+
+@keyframes changeColor3{
+  0% {
+    background:$color
+  }
+  25% {
+    background:$color
+  }
+  50% {
+    background:$inColor;
+  }
+  75% {
+    background:$color
+  }
+  100% {
+    background:$color
+  }
+}
+
+
+@keyframes changeColor4{
+  0% {
+    background:$color
+  }
+  25% {
+    background:$color
+  }
+  50% {
+    background:$color
+  }
+  75% {
+    background:$inColor;
+  }
+  100% {
+    background:$color
+  }
+}
