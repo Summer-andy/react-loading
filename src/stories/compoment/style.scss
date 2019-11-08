@@ -1,0 +1,140 @@
+.demo-container {
+  height: calc(100vh);
+  width: calc(100vw);
+  margin-top: -8px;
+  margin-left: -8px;
+  background: #090920;
+  overflow-x: hidden;
+  .top-container {
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(to right, #44dbf0, #ef306f);
+  }
+  .logo-area {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    > div:nth-of-type(1) {
+      width: 100px;
+      height: 60px;
+      color: #FFF;
+      line-height: 60px;
+      font-size: 1.4rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: auto;
+      position: absolute;
+      left: 20%;
+      top: 0;
+      bottom: 0;
+      > div {
+        position: absolute;
+        width: 130px;
+        height: 4px;
+        margin: auto;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        transform: rotate(-1deg);
+        background: linear-gradient(to right, #44dbf0, #ef306f);
+        filter: opacity(0.6);
+      }
+    }
+    > div:nth-of-type(2) {
+      width: 100px;
+      height: 60px;
+      color: #FFF;
+      margin: auto;
+      position: absolute;
+      right: 20%;
+      top: 0;
+      bottom: 0;
+      img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      img:hover {
+        border-radius: 15px;
+        background: #fff;
+      }
+    }
+  }
+  .title-area {
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    h1 {
+      font-size: 2rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      color: #fff;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: 300;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  }
+  .author-area {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    > div {
+      width: 270px;
+      height: 120px;
+      border-radius: 5px;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #272a53;
+      > div {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        color: #fff;
+        font-size: 12px;
+        line-height: 80px;
+      }
+      img {
+        width: 130px;
+        height: 100px;
+        margin: 10px auto;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        filter: contrast(120%);
+      }
+    }
+  }
+  .component {
+    width: 80%;
+    min-height: 500px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .item {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      position: relative;
+    }
+    .item:hover {
+
+      background: #18193a;
+    }
+  }
+}

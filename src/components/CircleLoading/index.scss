@@ -1,11 +1,15 @@
 .load {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 50px;
   height: 50px;
-  margin: 0 auto;
-  position: relative;
   border-radius: 50%;
   overflow: hidden;
-  background-color: rgba(0, 169, 178,.2);;
+  background-color: rgba(0, 169, 178,.2);
   &::before {
     content: "";
     width: 70px; // 50 * √2

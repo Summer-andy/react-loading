@@ -1,126 +1,133 @@
-$color: #c2f5d3;
+$color: #00adb5;
 $inColor: #f9c094;
-
-.load-block {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  animation: rotate 8s infinite ease-in-out;
-  .item1 {
-    width: 20px;
-    height: 20px;
-    animation: changeColor1 2s infinite ease-in-out;
-  }
-  .item2 {
-    width: 20px;
-    height: 20px;
-    animation: changeColor2 2s infinite ease-in-out;
-  }
-  .item3 {
-    width: 20px;
-    height: 20px;
-    animation: changeColor3 2s infinite ease-in-out;
-  }
-  .item4 {
-    width: 20px;
-    height: 20px;
-    animation: changeColor4 2s infinite ease-in-out;
+.load-container-block {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  .load-block {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: rotate 8s infinite ease-in-out;
+    .item1 {
+      width: 20px;
+      height: 20px;
+      animation: changeColor1 2s infinite ease-in-out;
+    }
+    .item2 {
+      width: 20px;
+      height: 20px;
+      animation: changeColor2 2s infinite ease-in-out;
+    }
+    .item3 {
+      width: 20px;
+      height: 20px;
+      animation: changeColor3 2s infinite ease-in-out;
+    }
+    .item4 {
+      width: 20px;
+      height: 20px;
+      animation: changeColor4 2s infinite ease-in-out;
+    }
   }
 }
 
 @keyframes rotate {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   25% {
-    transform:rotate(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    transform:rotate(180deg);
+    transform: rotate(180deg);
   }
   75% {
-    transform:rotate(270deg);
+    transform: rotate(270deg);
   }
   100% {
-    transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-
-@keyframes changeColor1{
+@keyframes changeColor1 {
   0% {
-    background:$inColor;
+    background: $inColor;
   }
   25% {
-    background:$color
+    background: $color;
   }
   50% {
-    background:$color
+    background: $color;
   }
   75% {
-    background:$color
+    background: $color;
   }
   100% {
-    background:$inColor;
+    background: $inColor;
   }
 }
 
-
-@keyframes changeColor2{
+@keyframes changeColor2 {
   0% {
-    background:$color
+    background: $color;
   }
   25% {
-    background:$inColor;
+    background: $inColor;
   }
   50% {
-    background:$color
+    background: $color;
   }
   75% {
-    background:$color
+    background: $color;
   }
   100% {
-    background:$color
+    background: $color;
   }
 }
 
-
-@keyframes changeColor3{
+@keyframes changeColor3 {
   0% {
-    background:$color
+    background: $color;
   }
   25% {
-    background:$color
+    background: $color;
   }
   50% {
-    background:$inColor;
+    background: $inColor;
   }
   75% {
-    background:$color
+    background: $color;
   }
   100% {
-    background:$color
+    background: $color;
   }
 }
 
-
-@keyframes changeColor4{
+@keyframes changeColor4 {
   0% {
-    background:$color
+    background: $color;
   }
   25% {
-    background:$color
+    background: $color;
   }
   50% {
-    background:$color
+    background: $color;
   }
   75% {
-    background:$inColor;
+    background: $inColor;
   }
   100% {
-    background:$color
+    background: $color;
   }
 }

@@ -9,11 +9,18 @@
 }
 
 .load-container {
+
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   .container {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 100px;
     height: 60px;
     text-align: center;
