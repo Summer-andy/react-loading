@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-alpha.4](https://github.com/sixiaodong123/react-loading/compare/v1.1.0-alpha.3...v1.1.0-alpha.4) (2019-11-08)
+
+
+### Features
+
+* 完成demo ([3cd3aa5](https://github.com/sixiaodong123/react-loading/commit/3cd3aa5))
+
+
+
 ## [1.1.0-alpha.3](https://github.com/sixiaodong123/react-loading/compare/v1.1.0-alpha.2...v1.1.0-alpha.3) (2019-11-07)
 
 
