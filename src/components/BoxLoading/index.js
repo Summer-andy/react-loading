@@ -1,11 +1,11 @@
 import React from 'react';
-import './index.scss';
-const Button = () => {
+import './style.scss';
+const BoxLoading = ({ style }) => {
   return (
-    <div className="load-container">
+    <div className="load-container" style={style}>
       <div className="boxLoading"></div>
     </div>
   );
 };
 
-export default Button;
+export default BoxLoading;

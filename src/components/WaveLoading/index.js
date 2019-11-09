@@ -1,8 +1,8 @@
 import React from 'react';
-import './index.scss';
-const WaveLoading = () => {
+import './style.scss';
+const WaveLoading = ({ style }) => {
   return (
-    <div className="load-container">
+    <div className="load-container" style={style}>
       <div className="container">
         <div className="boxLoading1"></div>
         <div className="boxLoading2"></div>

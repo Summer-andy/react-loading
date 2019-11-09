@@ -98,7 +98,6 @@ module.exports = function(webpackEnv) {
       libraryTarget: 'umd'
     },
     externals: {
-      antd: 'antd',
       react: {
         root: 'React',
         commonjs: 'react',

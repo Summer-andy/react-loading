@@ -6,7 +6,7 @@ import {
   BoxLoading,
   CircleLoading,
   LoopCircleLoading,
-  TransverseLoading
+  TransverseLoading,
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -15,7 +15,7 @@ const DemoContainer = () => {
       <div className="top-container"></div>
       <div className="logo-area">
         <div>LOADINGG<div></div></div>
-        <div><img alt="github" src={require('./github.jpeg')} /></div>
+        <div><a target="_blank" href="https://github.com/sixiaodong123/react-loading"><img alt="github" src={require('./github.jpeg')} /></a></div>
       </div>
       <div className="title-area">
         <h1>THE LOADING COMPONENT BASE ON REACT</h1>
@@ -39,13 +39,13 @@ const DemoContainer = () => {
           <CommonLoading />
         </div>
         <div className="item">
-          <WaveLoading />
+          <WaveLoading style={{ margin: '28px auto' }} />
         </div>
         <div className="item">
           <BlockLoading />
         </div>
         <div className="item">
-          <BoxLoading />
+          <BoxLoading style={{ margin: '25px auto' }} />
         </div>
         <div className="item">
           <CircleLoading />
@@ -57,7 +57,7 @@ const DemoContainer = () => {
           <TransverseLoading />
         </div>
         <div className="item">
-          <BoxLoading />
+          <BoxLoading style={{ margin: '25px auto' }} />
         </div>
         <div className="item">
           <CommonLoading />
@@ -69,7 +69,7 @@ const DemoContainer = () => {
           <TransverseLoading />
         </div>
         <div className="item">
-          <WaveLoading />
+          <WaveLoading style={{ margin: '28px auto' }}  />
         </div>
         <div className="item">
           <CommonLoading />

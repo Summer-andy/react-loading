@@ -1,8 +1,8 @@
 import React from 'react';
-import  './index.scss';
-const LoopCircleLoading = () => {
+import  './style.scss';
+const LoopCircleLoading = ({ style }) => {
   return (
-    <div className="load-container-block">
+    <div className="load-container-block" style={style}>
     <div className="load-container-loopCircle">
       <div className="container container1">
         <div className="circle circle1"></div>
