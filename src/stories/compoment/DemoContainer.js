@@ -4,9 +4,9 @@ import {
   WaveLoading,
   BlockLoading,
   BoxLoading,
-  CircleLoading,
   LoopCircleLoading,
   TransverseLoading,
+  CircleToBlockLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -48,7 +48,7 @@ const DemoContainer = () => {
           <BoxLoading style={{ margin: '25px auto' }} />
         </div>
         <div className="item">
-          <CircleLoading />
+          <CircleToBlockLoading />
         </div>
         <div className="item">
           <LoopCircleLoading />

@@ -32,6 +32,7 @@ import { BoxLoading } from 'react-loadingg'
 - [x]  LoopCircleLoading
 - [x]  TransverseLoading
 - [x]  WaveLoading
+- [x]  CircleToBlockLoading
 - [ ]  持续开发中...
 
 
