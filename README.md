@@ -9,7 +9,7 @@
 #### 🎉 组件安装
 
 ```
-npm install react-loading
+npm install react-loadingg
 ```
 
 #### 📦 组件使用
