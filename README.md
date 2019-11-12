@@ -6,7 +6,7 @@
 
 #### Demo
 
-  [🎉 查看demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
+  🎉 [查看demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
 ### 使用教程
 
@@ -36,7 +36,7 @@ import { BoxLoading } from 'react-loadingg'
 - [ ]  持续开发中...
 
 
-####  ⌨️开发
+####  ⌨️ 组件开发
 
 ```bash
 $ git clone https://github.com/sixiaodong123/react-loading
@@ -44,13 +44,19 @@ $ npm run dev
 ```
 访问 [http://localhost:9001/](http://localhost:9001/)
 
-#### 🔨 打包
+#### 🔨 组件打包
 
 ```bash
 $ npm run build
 ```
 
-#### 🤝 提交规范
+#### 🎉 组件发布
+
+```bash
+$ npm run release
+```
+
+#### 🤝 组件提交规范
 
 - perf: 优化相关，比如提升性能、体验
 - feat: 新功能(feature)
@@ -65,7 +71,7 @@ $ npm run build
 - scope: commit 影响的范围, 比如: route, component, utils, build...
 - merge: Merge branch ? of ?.
 
-### ❤️ 分支管理
+#### ❤️ 组件分支管理
 
 - 模块功能开发(feature/xxx)
 - Bug 修改(bug/xxx)
