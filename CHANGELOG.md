@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/sixiaodong123/react-loading/compare/v1.2.1...v1.2.2) (2019-11-14)
+
+
+### Bug Fixes
+
+* 修复文档组件名描述错误 ([adf72fc](https://github.com/sixiaodong123/react-loading/commit/adf72fc))
+
+
+
 ### [1.2.1](https://github.com/sixiaodong123/react-loading/compare/v1.2.0...v1.2.1) (2019-11-14)
 
 
