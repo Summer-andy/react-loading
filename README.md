@@ -1,9 +1,8 @@
 # React-Loading
-
+![npm version](https://img.shields.io/npm/v/react-loading)  ![](https://img.shields.io/github/license/sixiaodong123/react-loading) 
 ### 项目介绍
 
 基于 React 的 Loading 组件。
-
 #### Demo
 
   🎉 [查看demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
