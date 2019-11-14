@@ -27,7 +27,7 @@ import { BoxLoading } from 'react-loadingg'
 - [x]  BlockLoading 
 - [x]  BoxLoading
 - [x]  CircleLoading
-- [x]  CommomLoading
+- [x]  CommonLoading
 - [x]  LoopCircleLoading
 - [x]  TransverseLoading
 - [x]  WaveLoading
