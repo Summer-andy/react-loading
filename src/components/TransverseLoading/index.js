@@ -13,7 +13,6 @@ const bouncedelay = keyframes`
 `
 
 const LoadingContainer = styled.div`
-  margin: 50px auto;
   width: 150px;
   text-align: center;
 `;
@@ -21,7 +20,7 @@ const LoadingContainer = styled.div`
 const load = styled.div`
   width: 20px;
   height: 20px;
-  background-color: #00adb5;
+  background-color: ${props => props.color || '#00adb5;'};
   border-radius: 100%;
   display: inline-block;
   animation: ${bouncedelay} 1.4s infinite ease-in-out;
@@ -41,12 +40,12 @@ const LoadThree = styled(load)`
 
 `
 
-const TransverseLoading = ({ style }) => {
+const TransverseLoading = ({ style, color }) => {
   return (
     <LoadingContainer style={style}>
-        <LoadFirst />
-        <LoadTwo />
-        <LoadThree />
+        <LoadFirst color={color} />
+        <LoadTwo color={color} />
+        <LoadThree  color={color}/>
     </LoadingContainer>
   );
 };

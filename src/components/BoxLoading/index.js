@@ -4,12 +4,6 @@ import styled from 'styled-components';
 const LoadContainer = styled.div`
     width: 50px;
     height: 50px;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     &:before {
       content: '';
       width: 50px;
@@ -26,7 +20,7 @@ const LoadContainer = styled.div`
       content: '';
       width: 50px;
       height: 50px;
-      background: #00adb5;
+      background: ${props => props.color || '#00adb5'};
       animation: ${shadow} 0.5s linear infinite;
       position: absolute;
       top: 0;
@@ -35,9 +29,9 @@ const LoadContainer = styled.div`
     }
 `;
 
-const BoxLoading = ({ style }) => {
+const BoxLoading = ({ style, color }) => {
   return (
-    <LoadContainer></LoadContainer>
+    <LoadContainer style={style} color={color}></LoadContainer>
   );
 };
 

@@ -22,6 +22,19 @@ import { BoxLoading } from 'react-loadingg'
 <BoxLoading />
 ```
 
+#### 🎉 组件API
+
+| 组件   | color| speed | style | 
+|  ----  | ----  | ---- |---- |
+| BlockLoading  | ✅ | ✅  | ✅ |
+| BoxLoading  | ✅ | 🚧  | ✅ |
+| CircleLoading  | ✅ | 🚧  | ✅ |
+| CommonLoading  | ✅ |  🚧 | ✅ |
+| LoopCircleLoading  |✅  |  🚧 | ✅ |
+| TransverseLoading  | ✅ |  🚧 | ✅ |
+| WaveLoading  |  ✅| 🚧  |  ✅ |
+| CircleToBlockLoading  | ✅ | 🚧 | ✅ |
+
 #### ❤️  组件列表
 
 - [x]  BlockLoading 

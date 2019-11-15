@@ -20,7 +20,7 @@ const LoadContainer = styled.div`
 `;
 
 const box = styled.div`
-  background-color: #00adb5;
+  background-color: ${props => props.color || '#00adb5'};
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -48,14 +48,14 @@ const BoxLoadingFive = styled(box)`
   animation-delay: -0.8s;
 `;
 
-const WaveLoading = ({ style }) => {
+const WaveLoading = ({ style, color }) => {
   return (
     <LoadContainer style={style}>
-      <BoxLoadingFirst />
-      <BoxLoadingTwo />
-      <BoxLoadingThree />
-      <BoxLoadingFour />
-      <BoxLoadingFive />
+      <BoxLoadingFirst color={color} />
+      <BoxLoadingTwo color={color} />
+      <BoxLoadingThree color={color} />
+      <BoxLoadingFour color={color} />
+      <BoxLoadingFive color={color} />
     </LoadContainer>
   );
 };

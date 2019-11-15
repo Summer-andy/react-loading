@@ -16,12 +16,6 @@ const changeSharp = keyframes`
 const LoadContainer = styled.div`
   height: 100px;
   width: 100px;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -31,7 +25,7 @@ const LoadContainer = styled.div`
 const Item = styled.div`
     height: 20px;
     width: 20px;
-    background-color: #00adb5;
+    background-color:  ${props => props.color || '#00adb5' };
     position: absolute;
     margin: auto;
     border-radius: 2px;
@@ -51,12 +45,12 @@ const ItemThree = styled(Item)`
  animation-delay:  calc(3s * 4 / -1.5);
 `
 
-const CircleToBlockLoading = ({ style }) => {
+const CircleToBlockLoading = ({ style, color }) => {
   return (
     <LoadContainer style={style}>
-      <ItemFirst />
-      <ItemTwo />
-      <ItemThree />
+      <ItemFirst color={color} />
+      <ItemTwo color={color}  />
+      <ItemThree color={color}  />
     </LoadContainer>
   );
 };

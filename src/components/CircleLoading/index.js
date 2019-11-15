@@ -30,7 +30,7 @@ const LoadingContainer = styled.div`
     content: '';
     width: 70px;
     height: 70px;
-    background-color: #00adb5;
+    background-color: ${props => props.color || '#00adb5'};
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -54,9 +54,9 @@ const LoadingContainer = styled.div`
   }
 `;
 
-const CircleLoading = ({ style }) => {
+const CircleLoading = ({ style, color }) => {
   return (
-    <LoadingContainer style={style} />
+    <LoadingContainer style={style} color={color} />
   );
 };
 

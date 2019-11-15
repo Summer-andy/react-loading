@@ -1,6 +1,8 @@
 .demo-container {
   height: calc(100vh);
   width: calc(100vw);
+  min-height: 1000px;
+  min-width: 600px;
   margin-top: -8px;
   margin-left: -8px;
   background: #090920;
@@ -79,57 +81,17 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
   }
-  .author-area {
-    height: 150px;
-    width: 100%;
-    position: relative;
-    > div {
-      width: 270px;
-      height: 120px;
-      border-radius: 5px;
-      margin: auto;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: #272a53;
-      > div {
-        width: 100px;
-        height: 100px;
-        margin: 10px auto;
-        position: absolute;
-        right: 10px;
-        top: 0;
-        bottom: 0;
-        color: #fff;
-        font-size: 12px;
-        line-height: 80px;
-      }
-      img {
-        width: 130px;
-        height: 100px;
-        margin: 10px auto;
-        position: absolute;
-        left: 10px;
-        top: 0;
-        bottom: 0;
-        filter: contrast(120%);
-      }
-    }
-  }
   .component {
     width: 80%;
     min-height: 500px;
     margin-left: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     .item {
-      width: 150px;
+      width: 20%;
       height: 150px;
-      margin: 10px;
       position: relative;
     }
     .item:hover {
@@ -137,4 +99,23 @@
       background: #18193a;
     }
   }
+}
+
+
+
+::-webkit-scrollbar-track-piece {
+	background-color:#090a1f;
+  border-left:1px solid #090a1f;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+	width:1px;
+	height:1px;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#090a1f;
+	background-clip:padding-box;
+  border:1px solid #090a1f;
+  border-radius: 10px;
+	min-height:2px;
 }

@@ -15,12 +15,7 @@ const bouncedelay = keyframes`
 `;
 
 const LoadContainer = styled.div`
-  margin: auto;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 48px;
   height: 48px;
 `;
@@ -34,7 +29,7 @@ const container = styled.div`
 const circle = styled.div`
   width: 12px;
   height: 12px;
-  background-color: #00adb5;
+  background-color: ${props => props.color || '#00adb5'} ;
   border-radius: 100%;
   position: absolute;
   animation: ${bouncedelay} 1.2s infinite ease-in-out;
@@ -122,26 +117,26 @@ const CircleFour2 = styled(circle)`
   bottom: 0;
 `;
 
-const LoopCircleLoading = ({ style }) => {
+const LoopCircleLoading = ({ style, color }) => {
   return (
     <LoadContainer style={style}>
       <ContainerFirst>
-        <CircleFirst />
-        <CircleTwo />
-        <CircleThree />
-        <CircleFour />
+        <CircleFirst color={color} />
+        <CircleTwo color={color} />
+        <CircleThree color={color} />
+        <CircleFour color={color} />
       </ContainerFirst>
       <ContainerTwo>
-        <CircleFirst1 />
-        <CircleTwo1 />
-        <CircleThree1 />
-        <CircleFour1 />
+        <CircleFirst1 color={color} />
+        <CircleTwo1 color={color} />
+        <CircleThree1 color={color} />
+        <CircleFour1 color={color} />
       </ContainerTwo>
       <ContainerThree>
-        <CircleFirst2 />
-        <CircleTwo2 />
-        <CircleThree2 />
-        <CircleFour2 />
+        <CircleFirst2 color={color} />
+        <CircleTwo2 color={color} />
+        <CircleThree2 color={color} />
+        <CircleFour2 color={color} />
       </ContainerThree>
     </LoadContainer>
   );
