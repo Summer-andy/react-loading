@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sixiaodong123/react-loading/compare/v1.2.2...v1.3.0) (2019-11-15)
+
+
+### Features
+
+* 组件可以传递color属性 ([be2de89](https://github.com/sixiaodong123/react-loading/commit/be2de89))
+
+
+
 ### [1.2.2](https://github.com/sixiaodong123/react-loading/compare/v1.2.1...v1.2.2) (2019-11-14)
 
 
