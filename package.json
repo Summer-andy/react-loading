@@ -1,8 +1,8 @@
 {
   "name": "react-loadingg",
-  "version": "1.4.0",
+  "version": "1.4.1-alpha.0",
   "description": "A React component library.",
-  "main": "dist/hui.js",
+  "main": "lib/hui.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -23,7 +23,7 @@
     "components"
   ],
   "files": [
-    "dist"
+    "lib"
   ],
   "husky": {
     "hooks": {
