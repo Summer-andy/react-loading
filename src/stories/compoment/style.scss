@@ -54,11 +54,13 @@
       img {
         width: 30px;
         height: 30px;
+        border-radius: 15px;
         cursor: pointer;
+        background: #fff;
       }
       img:hover {
-        border-radius: 15px;
-        background: #fff;
+        animation: animate  3s linear infinite ;
+        filter: opacity(50%);
       }
     }
   }
@@ -118,4 +120,11 @@
   border:1px solid #090a1f;
   border-radius: 10px;
 	min-height:2px;
+}
+
+
+@keyframes animate {
+  to {
+    transform: rotate(360deg);
+  }
 }

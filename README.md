@@ -28,23 +28,33 @@ import { BoxLoading } from 'react-loadingg'
 |  ----  | ----  | ---- |---- |
 | BlockLoading  | ✅ | ✅  | ✅ |
 | BoxLoading  | ✅ | 🚧  | ✅ |
+| BlockReserveLoading  | ✅ | ✅  | ✅ |
 | CircleLoading  | ✅ | 🚧  | ✅ |
+| CircleToBlockLoading  | ✅ | 🚧 | ✅ |
 | CommonLoading  | ✅ |  🚧 | ✅ |
+| DisappearedLoading  | ✅ | ✅  | ✅ |
 | LoopCircleLoading  |✅  |  🚧 | ✅ |
+| NineCellLoading  | ✅ | ✅  | ✅ |
+| TouchBallLoading  | ✅ | ✅  | ✅ |
 | TransverseLoading  | ✅ |  🚧 | ✅ |
 | WaveLoading  |  ✅| 🚧  |  ✅ |
-| CircleToBlockLoading  | ✅ | 🚧 | ✅ |
+| WaveTopBottomLoading  | ✅ | ✅  | ✅ |
 
 #### ❤️  组件列表
 
 - [x]  BlockLoading 
 - [x]  BoxLoading
+- [x]  BlockReserveLoading
 - [x]  CircleLoading
+- [x]  CircleToBlockLoading
 - [x]  CommonLoading
+- [x]  DisappearedLoading
 - [x]  LoopCircleLoading
+- [x]  NineCellLoading
+- [x]  TouchBallLoading
 - [x]  TransverseLoading
 - [x]  WaveLoading
-- [x]  CircleToBlockLoading
+- [x]  WaveTopBottomLoading
 - [ ]  持续开发中...
 
 

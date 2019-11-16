@@ -20,7 +20,7 @@ const LoadingContainer = styled.div`
 const load = styled.div`
   width: 20px;
   height: 20px;
-  background-color: ${props => props.color || '#00adb5;'};
+  background-color: ${props => props.color || '#00adb5'};
   border-radius: 100%;
   display: inline-block;
   animation: ${bouncedelay} 1.4s infinite ease-in-out;

@@ -6,7 +6,13 @@ import {
   BoxLoading,
   LoopCircleLoading,
   TransverseLoading,
-  CircleToBlockLoading
+  CircleToBlockLoading,
+  DisappearedLoading,
+  TouchBallLoading,
+  BlockReserveLoading,
+  WaveTopBottomLoading,
+  CircleLoading,
+  NineCellLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -41,7 +47,7 @@ const DemoContainer = () => {
           <CommonLoading style={style} />
         </div>
         <div className="item">
-          <WaveLoading style={style} />
+          <NineCellLoading style={style} speed={1.5} />
         </div>
         <div className="item">
           <BlockLoading style={style} />
@@ -62,10 +68,10 @@ const DemoContainer = () => {
           <BoxLoading style={style} />
         </div>
         <div className="item">
-          <CommonLoading style={style} />
+          <DisappearedLoading style={style} />
         </div>
         <div className="item">
-          <LoopCircleLoading style={style} />
+          <TouchBallLoading style={style} />
         </div>
         <div className="item">
           <TransverseLoading style={{...style, marginTop: 60}} />
@@ -74,13 +80,13 @@ const DemoContainer = () => {
           <WaveLoading style={style} />
         </div>
         <div className="item">
-          <CommonLoading style={style} />
+          <WaveTopBottomLoading style={style} />
         </div>
         <div className="item">
-          <BlockLoading style={style} />
+          <CircleLoading style={style} inColor="#090a1e"  />
         </div>
         <div className="item">
-          <CircleToBlockLoading style={style} />
+          <BlockReserveLoading style={style} />
         </div>
       </div>
     </div>

@@ -48,15 +48,15 @@ const LoadingContainer = styled.div`
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: #fff;
+    background-color:  ${props => props.inColor || '#fff'};
     z-index: 2;
     border-radius: 50%;
   }
 `;
 
-const CircleLoading = ({ style, color }) => {
+const CircleLoading = ({ style, color, inColor }) => {
   return (
-    <LoadingContainer style={style} color={color} />
+    <LoadingContainer style={style} color={color} inColor={inColor} />
   );
 };
 
