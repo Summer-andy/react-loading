@@ -14,14 +14,14 @@ const LoadContainer = styled.div`
       top: 59px;
       left: 0;
       border-radius: 50%;
-      animation: ${animate} 0.5s linear infinite;
+      animation: ${animate} ${props => props.speed || 0.5}s linear infinite;
     }
     &:after {
       content: '';
       width: 50px;
       height: 50px;
       background: ${props => props.color || '#00adb5'};
-      animation: ${shadow} 0.5s linear infinite;
+      animation: ${shadow} ${props => props.speed || 0.5}s linear infinite;
       position: absolute;
       top: 0;
       left: 0;
@@ -29,9 +29,9 @@ const LoadContainer = styled.div`
     }
 `;
 
-const BoxLoading = ({ style, color }) => {
+const BoxLoading = ({ style, color, speed }) => {
   return (
-    <LoadContainer style={style} color={color}></LoadContainer>
+    <LoadContainer style={style} color={color} speed={speed}></LoadContainer>
   );
 };
 

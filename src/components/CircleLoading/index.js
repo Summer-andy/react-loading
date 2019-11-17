@@ -36,7 +36,7 @@ const LoadingContainer = styled.div`
     bottom: 50%;
     z-index: 1;
     transform-origin: left bottom;
-    animation: ${animate} 1.5s infinite linear;
+    animation: ${animate} ${props => props.speed || 1}s infinite linear;
   }
   &::after {
     content: '';
@@ -54,9 +54,9 @@ const LoadingContainer = styled.div`
   }
 `;
 
-const CircleLoading = ({ style, color, inColor }) => {
+const CircleLoading = ({ style, color, inColor, speed }) => {
   return (
-    <LoadingContainer style={style} color={color} inColor={inColor} />
+    <LoadingContainer style={style} color={color} inColor={inColor} speed={speed} />
   );
 };
 

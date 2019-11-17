@@ -27,9 +27,9 @@ import { BoxLoading } from 'react-loadingg'
 | 组件   | color| speed | style | 
 |  ----  | ----  | ---- |---- |
 | BlockLoading  | ✅ | ✅  | ✅ |
-| BoxLoading  | ✅ | 🚧  | ✅ |
+| BoxLoading  | ✅ | ✅  | ✅ |
 | BlockReserveLoading  | ✅ | ✅  | ✅ |
-| CircleLoading  | ✅ | 🚧  | ✅ |
+| CircleLoading  | ✅ | ✅  | ✅ |
 | CircleToBlockLoading  | ✅ | 🚧 | ✅ |
 | CommonLoading  | ✅ |  🚧 | ✅ |
 | DisappearedLoading  | ✅ | ✅  | ✅ |
