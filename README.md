@@ -59,6 +59,7 @@ import { BoxLoading } from 'react-loadingg'
 - [x] TransverseLoading
 - [x] WaveLoading
 - [x] WaveTopBottomLoading
+- [x] WindMillLoading
 - [ ] 持续开发中...
 
 #### ⌨️ 组件开发
