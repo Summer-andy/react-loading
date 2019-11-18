@@ -1,11 +1,14 @@
 # React-Loading
-![npm version](https://img.shields.io/npm/v/react-loading)  ![](https://img.shields.io/github/license/sixiaodong123/react-loading) ![](https://img.shields.io/npm/dm/react-loadingg)
+
+![npm version](https://img.shields.io/npm/v/react-loading) ![](https://img.shields.io/github/license/sixiaodong123/react-loading) ![](https://img.shields.io/npm/dm/react-loadingg)
+
 ### 项目介绍
 
 基于 React 的 Loading 组件。
+
 #### Demo
 
-  🎉 [查看demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
+🎉 [查看 demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
 ### 使用教程
 
@@ -22,48 +25,49 @@ import { BoxLoading } from 'react-loadingg'
 <BoxLoading />
 ```
 
-#### 🎉 组件API
+#### 🎉 组件 API
 
-| 组件   | color| speed | style | 
-|  ----  | ----  | ---- |---- |
-| BlockLoading  | ✅ | ✅  | ✅ |
-| BoxLoading  | ✅ | ✅  | ✅ |
-| BlockReserveLoading  | ✅ | ✅  | ✅ |
-| CircleLoading  | ✅ | ✅  | ✅ |
-| CircleToBlockLoading  | ✅ | 🚧 | ✅ |
-| CommonLoading  | ✅ |  🚧 | ✅ |
-| DisappearedLoading  | ✅ | ✅  | ✅ |
-| LoopCircleLoading  |✅  |  🚧 | ✅ |
-| NineCellLoading  | ✅ | ✅  | ✅ |
-| TouchBallLoading  | ✅ | ✅  | ✅ |
-| TransverseLoading  | ✅ |  🚧 | ✅ |
-| WaveLoading  |  ✅| 🚧  |  ✅ |
-| WaveTopBottomLoading  | ✅ | ✅  | ✅ |
+| 组件                 | color | speed | style |
+| -------------------- | ----- | ----- | ----- |
+| BlockLoading         | ✅    | ✅    | ✅    |
+| BoxLoading           | ✅    | ✅    | ✅    |
+| BlockReserveLoading  | ✅    | ✅    | ✅    |
+| CircleLoading        | ✅    | ✅    | ✅    |
+| CircleToBlockLoading | ✅    | 🚧    | ✅    |
+| CommonLoading        | ✅    | 🚧    | ✅    |
+| DisappearedLoading   | ✅    | ✅    | ✅    |
+| LoopCircleLoading    | ✅    | 🚧    | ✅    |
+| NineCellLoading      | ✅    | ✅    | ✅    |
+| TouchBallLoading     | ✅    | ✅    | ✅    |
+| TransverseLoading    | ✅    | 🚧    | ✅    |
+| WaveLoading          | ✅    | 🚧    | ✅    |
+| WaveTopBottomLoading | ✅    | ✅    | ✅    |
+| WindMillLoading      | ✅    | ✅    | ✅    |
 
-#### ❤️  组件列表
+#### ❤️ 组件列表
 
-- [x]  BlockLoading 
-- [x]  BoxLoading
-- [x]  BlockReserveLoading
-- [x]  CircleLoading
-- [x]  CircleToBlockLoading
-- [x]  CommonLoading
-- [x]  DisappearedLoading
-- [x]  LoopCircleLoading
-- [x]  NineCellLoading
-- [x]  TouchBallLoading
-- [x]  TransverseLoading
-- [x]  WaveLoading
-- [x]  WaveTopBottomLoading
-- [ ]  持续开发中...
+- [x] BlockLoading
+- [x] BoxLoading
+- [x] BlockReserveLoading
+- [x] CircleLoading
+- [x] CircleToBlockLoading
+- [x] CommonLoading
+- [x] DisappearedLoading
+- [x] LoopCircleLoading
+- [x] NineCellLoading
+- [x] TouchBallLoading
+- [x] TransverseLoading
+- [x] WaveLoading
+- [x] WaveTopBottomLoading
+- [ ] 持续开发中...
 
-
-####  ⌨️ 组件开发
+#### ⌨️ 组件开发
 
 ```bash
 $ git clone https://github.com/sixiaodong123/react-loading
 $ npm run dev
 ```
+
 访问 [http://localhost:9001/](http://localhost:9001/)
 
 #### 🔨 组件打包

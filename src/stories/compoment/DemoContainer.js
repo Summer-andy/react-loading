@@ -12,7 +12,8 @@ import {
   BlockReserveLoading,
   WaveTopBottomLoading,
   CircleLoading,
-  NineCellLoading
+  NineCellLoading,
+  WindMillLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -62,7 +63,7 @@ const DemoContainer = () => {
           <LoopCircleLoading style={style} />
         </div>
         <div className="item">
-          <TransverseLoading style={{...style, marginTop: 60}} />
+          <WindMillLoading style={style}  />
         </div>
         <div className="item">
           <BoxLoading style={style} />

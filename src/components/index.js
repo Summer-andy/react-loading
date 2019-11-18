@@ -11,3 +11,5 @@ export { default as DisappearedLoading } from './DisappearedLoading'
 export { default as BlockReserveLoading } from './BlockReserveLoading'
 export { default as WaveTopBottomLoading } from './WaveTopBottomLoading'
 export { default as NineCellLoading } from './NineCellLoading'
+export { default as WindMillLoading } from './WindMillLoading'
+
