@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/sixiaodong123/react-loading/compare/v1.5.0-alpha.0...v1.5.0) (2019-11-20)
+
+
+### Features
+
+* 新增风车Loading ([93f2f99](https://github.com/sixiaodong123/react-loading/commit/93f2f99))
+
+
+
 ## [1.5.0-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.4.1-alpha.0...v1.5.0-alpha.0) (2019-11-17)
 
 
