@@ -7,11 +7,7 @@
   margin-left: -8px;
   background: #090920;
   overflow-x: hidden;
-  .top-container {
-    height: 8px;
-    width: 100%;
-    background: linear-gradient(to right, #44dbf0, #ef306f);
-  }
+
   .logo-area {
     height: 100px;
     width: 100%;
@@ -46,15 +42,35 @@
       width: 100px;
       height: 60px;
       color: #FFF;
+      line-height: 60px;
+      font-size: 1.4rem;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: calc(20% - 80px);
+      bottom: 0;
+      img {
+        width: 100px;
+        height: 70px;
+        cursor: pointer;
+        position: absolute;
+        top: -13px;
+      }
+    }
+    > div:nth-of-type(3) {
+      width: 100px;
+      height: 60px;
+      color: #FFF;
       margin: auto;
       position: absolute;
       right: 20%;
       top: 0;
       bottom: 0;
       img {
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
         cursor: pointer;
         background: #fff;
       }

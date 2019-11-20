@@ -1,9 +1,18 @@
-# React-Loading
+<p align="center">
+  <a href="https://github.com/sixiaodong123/react-loading">
+    <img width="200" src="https://github.com/sixiaodong123/react-loading/blob/master/logo.png">
+  </a>
+</p>
+
+<h1 align="center">React-Loading</h1>
+
+<div align="center">
 
 ![npm version](https://img.shields.io/npm/v/react-loading) ![](https://img.shields.io/github/license/sixiaodong123/react-loading) ![](https://img.shields.io/npm/dm/react-loadingg)
 
-### 项目介绍
+</div>
 
+### 项目介绍
 基于 React 的 Loading 组件。
 
 #### Demo
