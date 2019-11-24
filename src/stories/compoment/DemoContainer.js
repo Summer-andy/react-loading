@@ -32,7 +32,7 @@ const DemoContainer = () => {
       <div className="top-container"></div>
       <div className="logo-area">
         <div>LOADINGG<div></div></div>
-        <div> <img src={require('./logo.jpeg')} alt="logo" /></div>
+        <div><a target="_blank" href="http://139.196.82.33:8080/"> <img src={require('./logo.jpeg')} alt="logo" /></a></div>
         <div><a target="_blank" href="https://github.com/sixiaodong123/react-loading"><img alt="github" src={require('./github.jpeg')} /></a></div>
       </div>
       <div className="title-area">
