@@ -38,6 +38,7 @@ import { BoxLoading } from 'react-loadingg'
 
 | 组件                 | color | speed | style |
 | -------------------- | ----- | ----- | ----- |
+| BabelLoading         | ✅    | ✅    | ✅    |
 | BlockLoading         | ✅    | ✅    | ✅    |
 | BoxLoading           | ✅    | ✅    | ✅    |
 | BlockReserveLoading  | ✅    | ✅    | ✅    |
@@ -52,7 +53,6 @@ import { BoxLoading } from 'react-loadingg'
 | WaveLoading          | ✅    | 🚧    | ✅    |
 | WaveTopBottomLoading | ✅    | ✅    | ✅    |
 | WindMillLoading      | ✅    | ✅    | ✅    |
-
 #### ❤️ 组件列表
 
 - [x] BlockLoading
@@ -69,6 +69,7 @@ import { BoxLoading } from 'react-loadingg'
 - [x] WaveLoading
 - [x] WaveTopBottomLoading
 - [x] WindMillLoading
+- [x] BabelLoading
 - [ ] 持续开发中...
 
 #### ⌨️ 组件开发

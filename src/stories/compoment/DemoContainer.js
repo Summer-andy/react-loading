@@ -13,7 +13,8 @@ import {
   WaveTopBottomLoading,
   CircleLoading,
   NineCellLoading,
-  WindMillLoading
+  WindMillLoading,
+  BabelLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -46,7 +47,7 @@ const DemoContainer = () => {
       </div>
       <div className="component">
         <div className="item">
-          <CommonLoading style={style} />
+          <CommonLoading style={style} speed={1} />
         </div>
         <div className="item">
           <NineCellLoading style={style} speed={1.5} />
@@ -55,10 +56,10 @@ const DemoContainer = () => {
           <BlockLoading style={style} />
         </div>
         <div className="item">
-          <BoxLoading  style={style} />
+          <BabelLoading  style={style} speed={3} />
         </div>
         <div className="item">
-          <CircleToBlockLoading style={style} />
+          <CircleToBlockLoading style={style} speed={3} />
         </div>
         <div className="item">
           <LoopCircleLoading style={style} />
@@ -67,7 +68,7 @@ const DemoContainer = () => {
           <WindMillLoading style={style}  />
         </div>
         <div className="item">
-          <BoxLoading style={style} />
+          <BoxLoading speed={0.7} style={style} />
         </div>
         <div className="item">
           <DisappearedLoading style={style} />
@@ -85,10 +86,10 @@ const DemoContainer = () => {
           <WaveTopBottomLoading style={style} />
         </div>
         <div className="item">
-          <CircleLoading style={style} inColor="#090a1e"  />
+          <CircleLoading style={style} inColor="#090a1e" speed={2}  />
         </div>
         <div className="item">
-          <BlockReserveLoading style={style} />
+          <BlockReserveLoading style={style} speed={2} />
         </div>
       </div>
     </div>
