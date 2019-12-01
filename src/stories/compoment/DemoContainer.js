@@ -14,7 +14,12 @@ import {
   CircleLoading,
   NineCellLoading,
   WindMillLoading,
-  BabelLoading
+  BabelLoading,
+  JumpCircleLoading,
+  MeteorRainLoading,
+  RotateCircleLoading,
+  StickyBallLoading,
+  SemipolarLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -127,6 +132,21 @@ const DemoContainer = () => {
         </div>
         <div className="item"  onClick={() => setName('BlockReserveLoading')}>
           <BlockReserveLoading style={style} speed={2} />
+        </div>
+        <div className="item"  onClick={() => setName('JumpCircleLoading')}>
+          <JumpCircleLoading style={style} speed={0.5}/>
+        </div>
+        <div className="item"  onClick={() => setName('MeteorRainLoading')}>
+          <MeteorRainLoading style={style} speed={3}/>
+        </div>
+        <div className="item"  onClick={() => setName('RotateCircleLoading')}>
+          <RotateCircleLoading style={style} speed={2}/>
+        </div>
+        <div className="item"  onClick={() => setName('StickyBallLoading')}>
+          <StickyBallLoading style={style} speed={3}/>
+        </div>
+        <div className="item"  onClick={() => setName('SemipolarLoading')}>
+          <SemipolarLoading style={style} speed={3}/>
         </div>
       </div>
     </div>

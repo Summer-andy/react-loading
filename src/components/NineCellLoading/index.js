@@ -44,7 +44,7 @@ const NineCellLoading = ({ style, color, speed }) => {
   return (
     <LoadContainer style={style} speed={speed}>
       {
-       Array.from(Array(9)).map(() => <Item color={color} speed={speed} />)
+       Array.from(Array(9)).map((item, index) => <Item color={color} speed={speed} key={index}/>)
       }
     </LoadContainer>
   );

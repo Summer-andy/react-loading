@@ -1,0 +1,96 @@
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+
+const scaling = keyframes`
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 0;
+  }
+`;
+
+const moveTo = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+`;
+
+const LoadContainer = styled.div`
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform: rotateZ(45deg);
+  > div:nth-of-type(1) {
+    top: 30%;
+    left: 25%;
+    animation-delay: 0s;
+  }
+  > div:nth-of-type(2) {
+    top: 10%;
+    left: 0%;
+    animation-delay: 0.8s;
+  }
+  > div:nth-of-type(3) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0.5s;
+  }
+  > div:nth-of-type(4) {
+    top: 25%;
+    left: 30%;
+    animation-delay: 1.6s;
+  }
+  > div:nth-of-type(5) {
+    top: 40%;
+    left: 4%;
+    animation-delay: 3.2s;
+  }
+  > div:nth-of-type(6) {
+    top: 55%;
+    left: 18%;
+    animation-delay: 1.2s;
+  }
+  > div:nth-of-type(7) {
+    top: 66%;
+    left: 3%;
+    animation-delay: 0.4s;
+  }
+  > div:nth-of-type(8) {
+    top: 77%;
+    left: 24%;
+    animation-delay: 2s;
+  }
+  > div:nth-of-type(9) {
+    top: 83%;
+    left: 30%;
+    animation-delay: 1s;
+  }
+`;
+
+const Star = styled.div`
+  height: 2px;
+  background: linear-gradient(-45deg, #00adb5, rgba(0, 0, 255, 0));
+  position: absolute;
+  border-radius: 50%;
+  /* filter: drop-shadow(0 0 6px #c7ecee); */
+  animation: ${scaling} ${props => props.speed || 3}s ease-in-out infinite, ${moveTo} ${props => props.speed || 3}s ease-in-out infinite;
+`
+
+const MeteorRainLoading = ({ style, color, speed }) => {
+  return (
+    <LoadContainer style={style}>
+      {
+       Array.from(Array(9)).map((item, index) => <Star color={color} speed={speed} key={index}/>)
+      }
+    </LoadContainer>
+  );
+};
+
+export default MeteorRainLoading;
