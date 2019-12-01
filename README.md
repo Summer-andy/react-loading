@@ -53,6 +53,11 @@ import { BoxLoading } from 'react-loadingg'
 | WaveLoading          | ✅    | 🚧    | ✅    |
 | WaveTopBottomLoading | ✅    | ✅    | ✅    |
 | WindMillLoading      | ✅    | ✅    | ✅    |
+| JumpCircleLoading    | ✅    | ✅    | ✅    |
+| MeteorRainLoading    | ✅    | ✅    | ✅    |
+| RotateCircleLoading  | ✅    | ✅    | ✅    |
+| StickyBallLoading    | ✅    | ✅    | ✅    |
+| SemipolarLoading     | ✅    | ✅    | ✅    |
 #### ❤️ 组件列表
 
 - [x] BlockLoading
@@ -70,6 +75,11 @@ import { BoxLoading } from 'react-loadingg'
 - [x] WaveTopBottomLoading
 - [x] WindMillLoading
 - [x] BabelLoading
+- [x] JumpCircleLoading
+- [x] MeteorRainLoading
+- [x] RotateCircleLoading
+- [x] StickyBallLoading
+- [x] SemipolarLoading
 - [ ] 持续开发中...
 
 #### ⌨️ 组件开发

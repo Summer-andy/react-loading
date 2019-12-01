@@ -28,7 +28,7 @@ const Item = styled.div`
   height: 30%;
   transform: rotate(0);
   background: ${props => props.color || '#00adb5'};
-animation: ${animate} ${props => props.speed || 1}s infinite;
+  animation: ${animate} ${props => props.speed || 1}s infinite;
 `;
 
 const BlockReserveLoading = ({ style, color, speed }) => {
