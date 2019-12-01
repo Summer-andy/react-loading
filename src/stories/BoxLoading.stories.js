@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, number, text  } from '@storybook/addon-knobs';
 import { BoxLoading } from '~/components';
 import Container from './compoment/Container';
 storiesOf('BoxLoading', module)
@@ -8,9 +8,13 @@ storiesOf('BoxLoading', module)
   .add(
     'BoxLoading',
     () => {
+      let speed = 1;
+      let color = '';
+      speed = number('动画速度(s)')
+      color = text('颜色')
       return (
         <Container>
-          <BoxLoading></BoxLoading>
+          <BoxLoading speed={speed} color={color}></BoxLoading>
         </Container>
       );
     }
