@@ -39,7 +39,7 @@ import { BoxLoading } from 'react-loadingg'
 | 组件                 | color | speed | style |
 | -------------------- | ----- | ----- | ----- |
 | BabelLoading         | ✅    | ✅    | ✅    |
-| BlockLoading         | ✅    | ✅    | ✅    |
+| BlockLoading         | ✅    | 🚧    | ✅    |
 | BoxLoading           | ✅    | ✅    | ✅    |
 | BlockReserveLoading  | ✅    | ✅    | ✅    |
 | CircleLoading        | ✅    | ✅    | ✅    |

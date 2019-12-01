@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, text  } from '@storybook/addon-knobs';
 import { CircleToBlockLoading } from '~/components';
 import Container from './compoment/Container';
 storiesOf('CircleToBlock', module)
@@ -8,9 +8,11 @@ storiesOf('CircleToBlock', module)
   .add(
     'CircleToBlock',
     () => {
+      let color = '';
+      color = text('颜色')
       return (
         <Container>
-          <CircleToBlockLoading></CircleToBlockLoading>
+          <CircleToBlockLoading  color={color}></CircleToBlockLoading>
         </Container>
       );
     }
