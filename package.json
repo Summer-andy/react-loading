@@ -20,7 +20,9 @@
   },
   "keywords": [
     "react",
-    "components"
+    "components",
+    "loading",
+    "react-loading"
   ],
   "files": [
     "lib"
