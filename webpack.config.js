@@ -61,16 +61,6 @@ module.exports = function(webpackEnv) {
               }
             }
           ]
-        },
-        {
-          // Some image formats so you can import images
-          test: /\.(png|gif|jpg|svg|eot|ttf|woff)$/,
-          use: {
-            loader: 'url-loader',
-            options: {
-              limit: 50000
-            }
-          }
         }
       ]
     },
