@@ -58,6 +58,8 @@ import { BoxLoading } from 'react-loadingg'
 | RotateCircleLoading  | ✅    | ✅    | ✅    |
 | StickyBallLoading    | ✅    | ✅    | ✅    |
 | SemipolarLoading     | ✅    | ✅    | ✅    |
+| SolarSystemLoading   | ✅    | ✅    | ✅    |
+
 #### ❤️ 组件列表
 
 - [x] BlockLoading
@@ -80,6 +82,7 @@ import { BoxLoading } from 'react-loadingg'
 - [x] RotateCircleLoading
 - [x] StickyBallLoading
 - [x] SemipolarLoading
+- [x] SolarSystemLoading
 - [ ] 持续开发中...
 
 #### ⌨️ 组件开发

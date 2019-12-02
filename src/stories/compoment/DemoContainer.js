@@ -19,7 +19,8 @@ import {
   MeteorRainLoading,
   RotateCircleLoading,
   StickyBallLoading,
-  SemipolarLoading
+  SemipolarLoading,
+  SolarSystemLoading
 } from '~/components';
 import './style.scss';
 const DemoContainer = () => {
@@ -147,6 +148,9 @@ const DemoContainer = () => {
         </div>
         <div className="item"  onClick={() => setName('SemipolarLoading')}>
           <SemipolarLoading style={style} speed={2}/>
+        </div>
+        <div className="item"  onClick={() => setName('SolarSystemLoading')}>
+          <SolarSystemLoading style={style} speed={2}/>
         </div>
       </div>
     </div>
