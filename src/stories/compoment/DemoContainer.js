@@ -146,7 +146,7 @@ const DemoContainer = () => {
           <StickyBallLoading style={style} speed={3}/>
         </div>
         <div className="item"  onClick={() => setName('SemipolarLoading')}>
-          <SemipolarLoading style={style} speed={3}/>
+          <SemipolarLoading style={style} speed={2}/>
         </div>
       </div>
     </div>

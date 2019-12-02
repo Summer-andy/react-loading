@@ -76,7 +76,7 @@ const LoadContainer = styled.div`
 
 const Star = styled.div`
   height: 2px;
-  background: linear-gradient(-45deg, #00adb5, rgba(0, 0, 255, 0));
+  background: linear-gradient(-45deg, ${props => props.color || '#00adb5'}, rgba(0, 0, 255, 0));
   position: absolute;
   border-radius: 50%;
   /* filter: drop-shadow(0 0 6px #c7ecee); */
