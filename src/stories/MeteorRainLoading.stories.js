@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, number, text } from '@storybook/addon-knobs';
 import { MeteorRainLoading } from '~/components';
 import Container from './compoment/Container';
 storiesOf('MeteorRainLoading', module)
@@ -8,9 +8,13 @@ storiesOf('MeteorRainLoading', module)
   .add(
     'MeteorRainLoading',
     () => {
+      let speed = 1;
+      let color = '';
+      speed = number('动画速度(s)')
+      color = text('颜色')
       return (
         <Container>
-          <MeteorRainLoading></MeteorRainLoading>
+          <MeteorRainLoading speed={speed} color={color}></MeteorRainLoading>
         </Container>
       );
     }
