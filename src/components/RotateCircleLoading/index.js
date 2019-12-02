@@ -50,7 +50,6 @@ const LoadContainer = styled.div`
 const CircleOne = styled.div`
   left: 0;
   top: 0;
-  animation-delay: 0s;
 `
 
 const CircleTwo = styled.div`
@@ -70,7 +69,7 @@ const CircleFour = styled.div`
 
 const RotateCircleLoading = ({ style, color, speed }) => {
   return (
-    <LoadContainer style={style} speed={speed}>
+    <LoadContainer style={style} speed={speed} color={color}>
       <CircleOne color={color} speed={speed} />
       <CircleTwo color={color} speed={speed} />
       <CircleThree color={color} speed={speed} />

@@ -71,7 +71,7 @@ const HalfCircle = styled.div`
 
 const SemipolarLoading = ({ style, color, speed }) => {
   return (
-    <LoadContainer style={style}>
+    <LoadContainer style={style} speed={speed}>
       {
         Array.from(Array(5)).map((item, index) => <HalfCircle color={color} speed={speed} key={index}/>)
       }
