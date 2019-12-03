@@ -13,6 +13,7 @@
     "dev": "npm run storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --env production",
+    "build:lib": "cross-env OUTPUT_MODULE=commonjs babel ./src/components -d lib",
     "storybook": "start-storybook -p 9001",
     "build-storybook": "build-storybook",
     "release": "standard-version",
