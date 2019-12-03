@@ -2,7 +2,7 @@
   "name": "react-loadingg",
   "version": "1.5.2",
   "description": "A React component library.",
-  "main": "lib/hui.js",
+  "main": "lib/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
