@@ -118,7 +118,7 @@ $ npm run release
 #### 🛎 组件开发规范 
 - 所有单个```不分离```元素的组件的size分别为large(30px)、default(26px)、small(22px)
 - 所有单个```分离```的元素的组件的size分别为large(14px)、default(12px)、small(10px)
-
+- 特殊组件可以根据大众审美自定义size
 #### 🤝 组件提交规范
 
 - perf: 优化相关，比如提升性能、体验
