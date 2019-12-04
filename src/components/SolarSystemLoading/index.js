@@ -9,83 +9,83 @@ const rotate = keyframes`
 
 
 const LoadContainer = styled.div`
-  width: 50px;
-  height: 50px;
+  width: ${props => props.size === 'small' ? 44 : (props.size === 'large' ? 56 : 50)}px;
+  height: ${props => props.size === 'small' ? 44 : (props.size === 'large' ? 56 : 50)}px;
   position: relative;
   /* overflow: hidden; */
 `;
 
 const Sun = styled.div`
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+  width: ${props => props.size === 'small' ? 2 : (props.size === 'large' ? 6 : 4)}px;;
+  height: ${props => props.size === 'small' ? 2 : (props.size === 'large' ? 6 : 4)}px;;
+  border-radius: 100%;
   background-color: ${props => props.color || '#00adb5'};
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -2px;
-  margin-top: -2px;
+  margin-left: ${props => props.size === 'small' ? -1 : (props.size === 'large' ? -3 : -2)}px;
+  margin-top: ${props => props.size === 'small' ? -1 : (props.size === 'large' ? -3 : -2)}px;
 `
 
 const FirstTrack = styled.div`
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: ${props => props.size === 'small' ? 24 : (props.size === 'large' ? 36 : 30)}px;
+  height: ${props => props.size === 'small' ? 24 : (props.size === 'large' ? 36 : 30)}px;
+  border-radius: 100%;
   border: 1px solid;
   border-color: ${props => props.color || '#00adb5'};
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
+  margin-left: ${props => props.size === 'small' ? -12 : (props.size === 'large' ? -18 : -15)}px;
+  margin-top: ${props => props.size === 'small' ? -12 : (props.size === 'large' ? -18 : -15)}px;
   box-sizing: border-box;
   animation: ${rotate} ${props => props.speed || 2}s linear infinite;
 `
 
 const Earth = styled.div`
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+  width: ${props => props.size === 'small' ? 4 : (props.size === 'large' ? 8 : 6)}px;
+  height: ${props => props.size === 'small' ? 4 : (props.size === 'large' ? 8 : 6)}px;
+  border-radius: 100%;
   background-color: ${props => props.color || '#00adb5'};
   position: absolute;
-  left: -1px;
-  top: 2px;
+  left: ${props => props.size === 'small' ? 1 : (props.size === 'large' ? 1 : 0)}px;
+  top: ${props => props.size === 'small' ? 1 : (props.size === 'large' ? 3 : 2)}px;
 `
 
 const SecondTrack = styled.div`
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: ${props => props.size === 'small' ? 54 : (props.size === 'large' ? 66 : 60)}px;
+  height: ${props => props.size === 'small' ? 54 : (props.size === 'large' ? 66 : 60)}px;
+  border-radius: 100%;
   border: 1px solid;
   border-color: ${props => props.color || '#00adb5'};
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: ${props => props.size === 'small' ? -27 : (props.size === 'large' ? -33 : -30)}px;
+  margin-top: ${props => props.size === 'small' ? -27 : (props.size === 'large' ? -33 : -30)}px;
   box-sizing: border-box;
   animation: ${rotate} ${props => props.speed * 1.5 || 3}s linear infinite;
 `
 
 const Mars = styled.div`
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: ${props => props.size === 'small' ? 6 : (props.size === 'large' ? 10 : 8)}px;
+  height: ${props => props.size === 'small' ? 6 : (props.size === 'large' ? 10 : 8)}px;
+  border-radius: 100%;
   background-color: ${props => props.color || '#00adb5'};
   position: absolute;
-  left: 7px;
-  top: 2px;
+  left: ${props => props.size === 'small' ? 6 : (props.size === 'large' ? 8 : 7)}px;
+  top: ${props => props.size === 'small' ? 1 : (props.size === 'large' ? 3 : 2)}px;
 `
 
-const SolarSystemLoading = ({ style, color, speed }) => {
+const SolarSystemLoading = ({ style, color, speed, size }) => {
   return (
-    <LoadContainer style={style}>
-      <Sun color={color}/>
-      <FirstTrack color={color} speed={speed}>
-        <Earth color={color}/>
+    <LoadContainer style={style} size={size}>
+      <Sun color={color} size={size}/>
+      <FirstTrack color={color} speed={speed} size={size}>
+        <Earth color={color} size={size}/>
       </FirstTrack>
-      <SecondTrack color={color} speed={speed}>
-        <Mars color={color}/>
+      <SecondTrack color={color} speed={speed} size={size}>
+        <Mars color={color} size={size}/>
       </SecondTrack>
     </LoadContainer>
   );

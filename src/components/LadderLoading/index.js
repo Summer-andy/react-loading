@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 const leftLadderMove = keyframes`
   0% {
-    transform: translateY(64px);
+    transform: translateY(68px);
   }
   10%,
   50% {
@@ -11,28 +11,28 @@ const leftLadderMove = keyframes`
   }
   60%,
   100% {
-    transform: translateY(-64px);
+    transform: translateY(-68px);
   }
 `;
 
 const rightLadderMove = keyframes`
   0%, 
   40% {
-    transform: translateY(64px);
+    transform: translateY(68px);
   }
   50%,
   90% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-64px);
+    transform: translateY(-68px);
   }
 `;
 
 const RowLadderOneMove = keyframes`
   0%, 
   10% {
-    transform: translateY(64px);
+    transform: translateY(68px);
   }
   20%,
   60% {
@@ -40,14 +40,14 @@ const RowLadderOneMove = keyframes`
   }
   70%,
   100% {
-    transform: translateY(-64px);
+    transform: translateY(-68px);
   }
 `;
 
 const RowLadderTwoMove = keyframes`
   0%, 
   20% {
-    transform: translateY(64px);
+    transform: translateY(68px);
   }
   30%,
   70% {
@@ -55,14 +55,14 @@ const RowLadderTwoMove = keyframes`
   }
   80%,
   100% {
-    transform: translateY(-64px);
+    transform: translateY(-68px);
   }
 `;
 
 const RowLadderThreeMove = keyframes`
   0%, 
   30% {
-    transform: translateY(64px);
+    transform: translateY(68px);
   }
   40%,
   80% {
@@ -70,13 +70,13 @@ const RowLadderThreeMove = keyframes`
   }
   90%,
   100% {
-    transform: translateY(-64px);
+    transform: translateY(-68px);
   }
 `;
 
 const LoadContainer = styled.div`
-  width: 20px;
-  height: 64px;
+  width: ${props => props.size === 'small' ? 16 : (props.size === 'large' ? 24 : 20)}px;
+  height: ${props => props.size === 'small' ? 60 : (props.size === 'large' ? 68 : 64)}px;
   position: relative;
   overflow: hidden;
 `;
@@ -84,7 +84,7 @@ const LoadContainer = styled.div`
 const LeftLadder = styled.div`
   height: 0;
 	width: 1px;
-	border-bottom: 64px solid ${props => props.color || '#00adb5'};
+	border-bottom: ${props => props.size === 'small' ? 60 : (props.size === 'large' ? 68 : 64)}px solid ${props => props.color || '#00adb5'};
 	border-left: 1px solid transparent;
 	border-right: 1px solid transparent;
   position: absolute;
@@ -96,7 +96,7 @@ const LeftLadder = styled.div`
 const RightLadder = styled.div`
   height: 0;
 	width: 1px;
-	border-bottom: 64px solid ${props => props.color || '#00adb5'};
+	border-bottom: ${props => props.size === 'small' ? 60 : (props.size === 'large' ? 68 : 64)}px solid ${props => props.color || '#00adb5'};
 	border-left: 1px solid transparent;
 	border-right: 1px solid transparent;
   position: absolute;
@@ -138,14 +138,14 @@ const RowLadderThree = styled.div`
   animation: ${RowLadderThreeMove} ${props => props.speed || 4}s ease infinite;
 `
 
-const LadderLoading = ({ style, color, speed }) => {
+const LadderLoading = ({ style, color, speed, size }) => {
   return (
     <LoadContainer style={style}>
-      <LeftLadder color={color} speed={speed}/>
-      <RightLadder color={color} speed={speed}/>
-      <RowLadderOne color={color} speed={speed}/>
-      <RowLadderTwo color={color} speed={speed}/>
-      <RowLadderThree color={color} speed={speed}/>
+      <LeftLadder color={color} speed={speed} size={size}/>
+      <RightLadder color={color} speed={speed} size={size}/>
+      <RowLadderOne color={color} speed={speed} size={size}/>
+      <RowLadderTwo color={color} speed={speed} size={size}/>
+      <RowLadderThree color={color} speed={speed} size={size}/>
     </LoadContainer>
   );
 };

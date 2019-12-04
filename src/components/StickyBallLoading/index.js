@@ -33,8 +33,8 @@ const BlurField = styled.div`
 `
 
 const BallOne = styled.div`
-  width: 24px;
-  height: 24px;
+  width: ${props => props.size === 'small' ? 18 : (props.size === 'large' ? 30 : 24)}px;
+  height: ${props => props.size === 'small' ? 18 : (props.size === 'large' ? 30 : 24)}px;
   border-radius: 100%;
   position: relative;
   z-index: 1;
@@ -43,20 +43,20 @@ const BallOne = styled.div`
 `
 
 const BallTwo = styled.div`
-  width: 24px;
-  height: 24px;
+  width: ${props => props.size === 'small' ? 18 : (props.size === 'large' ? 30 : 24)}px;
+  height: ${props => props.size === 'small' ? 18 : (props.size === 'large' ? 30 : 24)}px;
   border-radius: 100%;
   position: relative;
-  background-color: ${props => props.color || '#f9c094' };
+  background-color: ${props => props.inColor || '#f9c094' };
   animation: ${fly} ${props => props.speed || 2}s -${props => props.speed/2 || 1}s infinite;
 `
 
-const StickyBallLoading = ({ style, color, speed }) => {
+const StickyBallLoading = ({ style, color, inColor, speed, size }) => {
   return (
     <LoadContainer style={style}>
       <BlurField>
-        <BallOne color={color} speed={speed}/>
-        <BallTwo color={color} speed={speed}/>
+        <BallOne color={color} speed={speed} size={size}/>
+        <BallTwo inColor={inColor} speed={speed} size={size}/>
       </BlurField>
     </LoadContainer>
   );

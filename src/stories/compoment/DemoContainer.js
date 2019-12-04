@@ -21,11 +21,13 @@ import {
   StickyBallLoading,
   SemipolarLoading,
   SolarSystemLoading,
-  LadderLoading
+  LadderLoading,
+  HeartBoomLoading,
+  RollBoxLoading
 } from '~/components';
 import './style.scss';
-const DemoContainer = () => {
 
+const DemoContainer = () => {
   const [visible, setVisible] = useState(false);
   const [name, setName] = useState('CommonLoading');
   const style = {
@@ -36,6 +38,8 @@ const DemoContainer = () => {
     top: 0,
     bottom: 0
   };
+  const color = '#00adb5';
+
   const c = "import React from 'react';";
   const a = `import { ${name}  } from 'react-loadingg';`;
   const b = `const Container = () => <${name} />;`;
@@ -91,70 +95,76 @@ const DemoContainer = () => {
       </div>
       <div className="component">
         <div className="item" onClick={() => setName('CommonLoading')}>
-          <CommonLoading style={style} speed={1} />
+          <CommonLoading style={style} speed={1} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('NineCellLoading')}>
-          <NineCellLoading style={style} speed={1.5} />
+          <NineCellLoading style={style} speed={1.5} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('BlockLoading')}>
-          <BlockLoading style={style} />
+          <BlockLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('BabelLoading')}>
-          <BabelLoading style={style} speed={3} />
+          <BabelLoading style={style} speed={3} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('CircleToBlockLoading')}>
-          <CircleToBlockLoading style={style} speed={3} />
+          <CircleToBlockLoading style={style} speed={3} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('LoopCircleLoading')}>
-          <LoopCircleLoading style={style} />
+          <LoopCircleLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('WindMillLoading')}>
-          <WindMillLoading style={style} />
+          <WindMillLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('BoxLoading')}>
-          <BoxLoading speed={0.7} style={style} />
+          <BoxLoading speed={0.7} style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('DisappearedLoading')}>
-          <DisappearedLoading style={style} />
+          <DisappearedLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('TouchBallLoading')}>
-          <TouchBallLoading style={style} />
+          <TouchBallLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('TransverseLoading')}>
-          <TransverseLoading style={{ ...style, marginTop: 60 }} />
+          <TransverseLoading style={{ ...style, marginTop: 60 }} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('WaveLoading')}>
-          <WaveLoading style={style} />
+          <WaveLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('WaveTopBottomLoading')}>
-          <WaveTopBottomLoading style={style} />
+          <WaveTopBottomLoading style={style} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('CircleLoading')}>
-          <CircleLoading style={style} inColor="#090a1e" speed={2} />
+          <CircleLoading style={style} inColor="#090a1e" speed={2} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('BlockReserveLoading')}>
-          <BlockReserveLoading style={style} speed={2} />
+          <BlockReserveLoading style={style} speed={2} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('JumpCircleLoading')}>
-          <JumpCircleLoading style={style} speed={0.5}/>
+          <JumpCircleLoading style={style} speed={0.5} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('MeteorRainLoading')}>
-          <MeteorRainLoading style={style} speed={3}/>
+          <MeteorRainLoading style={style} speed={3} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('RotateCircleLoading')}>
-          <RotateCircleLoading style={style} speed={2}/>
+          <RotateCircleLoading style={style} speed={2} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('StickyBallLoading')}>
-          <StickyBallLoading style={style} speed={3}/>
+          <StickyBallLoading style={style} speed={3} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('SemipolarLoading')}>
-          <SemipolarLoading style={style} speed={2}/>
+          <SemipolarLoading style={style} speed={2} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('SolarSystemLoading')}>
-          <SolarSystemLoading style={style} speed={2}/>
+          <SolarSystemLoading style={style} speed={2} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('LadderLoading')}>
-          <LadderLoading style={style} speed={4}/>
+          <LadderLoading style={style} speed={4} color={color} size="default"/>
+        </div>
+        <div className="item"  onClick={() => setName('HeartBoomLoading')}>
+          <HeartBoomLoading style={style} speed={2} color={color} size="default"/>
+        </div>
+        <div className="item"  onClick={() => setName('RollBoxLoading')}>
+          <RollBoxLoading style={style} speed={1.5} color={color} size="default"/>
         </div>
       </div>
     </div>
