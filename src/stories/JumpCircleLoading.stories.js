@@ -8,13 +8,15 @@ storiesOf('JumpCircleLoading', module)
   .add(
     'JumpCircleLoading',
     () => {
-      let speed = 1;
+      let speed = 0.5;
       let color = '';
-      speed = number('动画速度(s)')
-      color = text('颜色')
+      let size = '';
+      speed = number('动画速度(s)');
+      color = text('颜色');
+      size = text('尺寸');
       return (
         <Container>
-          <JumpCircleLoading speed={speed} color={color}></JumpCircleLoading>
+          <JumpCircleLoading speed={speed} color={color} size={size}></JumpCircleLoading>
         </Container>
       );
     }

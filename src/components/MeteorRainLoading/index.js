@@ -23,8 +23,8 @@ const moveTo = keyframes`
 `;
 
 const LoadContainer = styled.div`
-  width: 80px;
-  height: 80px;
+  width: ${props => props.size === 'small' ? 68 : (props.size === 'large' ? 88 : 80)}px;
+  height: ${props => props.size === 'small' ? 68 : (props.size === 'large' ? 88 : 80)}px;
   position: relative;
   transform: rotateZ(45deg);
   > div:nth-of-type(1) {
@@ -83,9 +83,9 @@ const Star = styled.div`
   animation: ${scaling} ${props => props.speed || 3}s ease-in-out infinite, ${moveTo} ${props => props.speed || 3}s ease-in-out infinite;
 `
 
-const MeteorRainLoading = ({ style, color, speed }) => {
+const MeteorRainLoading = ({ style, color, speed, size }) => {
   return (
-    <LoadContainer style={style}>
+    <LoadContainer style={style} size={size}>
       {
        Array.from(Array(9)).map((item, index) => <Star color={color} speed={speed} key={index}/>)
       }

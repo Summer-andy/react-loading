@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, text } from '@storybook/addon-knobs';
-import { RotateCircleLoading } from '~/components';
+import { LadderLoading } from '~/components';
 import Container from './compoment/Container';
-storiesOf('RotateCircleLoading', module)
+storiesOf('LadderLoading', module)
   .addDecorator(withKnobs)
   .add(
-    'RotateCircleLoading',
+    'LadderLoading',
     () => {
       let speed = 1;
       let color = '';
@@ -16,7 +16,7 @@ storiesOf('RotateCircleLoading', module)
       size = text('尺寸');
       return (
         <Container>
-          <RotateCircleLoading speed={speed} color={color} size={size}></RotateCircleLoading>
+          <LadderLoading speed={speed} color={color} size={size}></LadderLoading>
         </Container>
       );
     }

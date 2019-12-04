@@ -74,7 +74,7 @@ const Con = styled.div`
 const WindMillLoading = ({ style = commonStyle, color, speed }) => {
   return (
     <LoadingContainer style={style} color={color}>
-        <Center color={color} />
+      <Center color={color} />
       <Con speed={speed}>
         <ItemFirst color={color} />
         <ItemSecord color={color} />

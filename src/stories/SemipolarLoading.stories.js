@@ -10,11 +10,13 @@ storiesOf('SemipolarLoading', module)
     () => {
       let speed = 1;
       let color = '';
-      speed = number('动画速度(s)')
-      color = text('颜色')
+      let size = '';
+      speed = number('动画速度(s)');
+      color = text('颜色');
+      size = text('尺寸');
       return (
         <Container>
-          <SemipolarLoading speed={speed} color={color}></SemipolarLoading>
+          <SemipolarLoading speed={speed} color={color} size={size}></SemipolarLoading>
         </Container>
       );
     }
