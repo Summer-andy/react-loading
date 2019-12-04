@@ -12,7 +12,7 @@ storiesOf('WaveTopBottomLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <WaveTopBottomLoading  speed={speed} color={color} style={{ margin: "100px 60px" }}></WaveTopBottomLoading>
+        <WaveTopBottomLoading  speed={speed} color={color} ></WaveTopBottomLoading>
       </Container>
     );
   });

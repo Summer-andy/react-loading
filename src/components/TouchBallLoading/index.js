@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle  } from "../utils/style";
 const leftAnimate = keyframes`
   50%,
   100% {
@@ -43,7 +43,7 @@ const ItemRight = styled(Item)`
   animation: ${rightAnimate} ${props => props.speed || 1}s ease-out alternate infinite ;
 `
 
-const TouchBallLoading = ({ style, color, speed }) => {
+const TouchBallLoading = ({ style = commonStyle, color, speed }) => {
   return (
     <LoadingContainer style={style}>
       <ItemLeft color={color} speed={speed} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle } from '../utils/style';
 const bouncedelay = keyframes`
   0%,
   80%,
@@ -14,6 +14,7 @@ const bouncedelay = keyframes`
 
 const LoadingContainer = styled.div`
   width: 150px;
+  height: 150px;
   text-align: center;
 `;
 
@@ -40,7 +41,7 @@ const LoadThree = styled(load)`
 
 `
 
-const TransverseLoading = ({ style, color }) => {
+const TransverseLoading = ({ style = commonStyle, color }) => {
   return (
     <LoadingContainer style={style}>
         <LoadFirst color={color} />

@@ -12,7 +12,7 @@ storiesOf('DisappearedLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <DisappearedLoading speed={speed} color={color} style={{ margin: "100px 60px" }}></DisappearedLoading>
+        <DisappearedLoading speed={speed} color={color} ></DisappearedLoading>
       </Container>
     );
   });

@@ -10,7 +10,7 @@ storiesOf('WaveLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <WaveLoading color={color} style={{ margin: "100px 60px" }}></WaveLoading>
+        <WaveLoading color={color} ></WaveLoading>
       </Container>
     );
   });

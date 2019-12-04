@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle } from '../utils/style';
 
 const animate = keyframes`
   0% {
@@ -15,12 +15,6 @@ const animate = keyframes`
 `
 
 const LoadingContainer = styled.div`
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -54,7 +48,7 @@ const LoadingContainer = styled.div`
   }
 `;
 
-const CircleLoading = ({ style, color, inColor, speed }) => {
+const CircleLoading = ({ style = commonStyle, color, inColor, speed }) => {
   return (
     <LoadingContainer style={style} color={color} inColor={inColor} speed={speed} />
   );
