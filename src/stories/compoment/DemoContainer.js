@@ -23,7 +23,8 @@ import {
   SolarSystemLoading,
   LadderLoading,
   HeartBoomLoading,
-  RollBoxLoading
+  RollBoxLoading,
+  RectGraduallyShowLoading
 } from '~/components';
 import './style.scss';
 
@@ -164,7 +165,10 @@ const DemoContainer = () => {
           <HeartBoomLoading style={style} speed={2} color={color} size="default"/>
         </div>
         <div className="item"  onClick={() => setName('RollBoxLoading')}>
-          <RollBoxLoading style={style} speed={1.5} color={color} size="default"/>
+          <RollBoxLoading style={style} speed={2} color={color} size="default"/>
+        </div>
+        <div className="item"  onClick={() => setName('RectGraduallyShowLoading')}>
+          <RectGraduallyShowLoading style={style} speed={2} color={color} size="default"/>
         </div>
       </div>
     </div>

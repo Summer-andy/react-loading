@@ -22,3 +22,4 @@ export { default as SolarSystemLoading } from './SolarSystemLoading';
 export { default as LadderLoading } from './LadderLoading';
 export { default as HeartBoomLoading } from './HeartBoomLoading';
 export { default as RollBoxLoading } from './RollBoxLoading';
+export { default as RectGraduallyShowLoading } from './RectGraduallyShowLoading';

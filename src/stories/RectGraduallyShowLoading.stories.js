@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, text } from '@storybook/addon-knobs';
-import { RollBoxLoading } from '~/components';
+import { RectGraduallyShowLoading } from '~/components';
 import Container from './compoment/Container';
-storiesOf('RollBoxLoading', module)
+storiesOf('RectGraduallyShowLoading', module)
   .addDecorator(withKnobs)
   .add(
-    'RollBoxLoading',
+    'RectGraduallyShowLoading',
     () => {
       let speed = 2;
       let color = '';
@@ -16,7 +16,7 @@ storiesOf('RollBoxLoading', module)
       size = text('尺寸');
       return (
         <Container>
-          <RollBoxLoading speed={speed} color={color} size={size}></RollBoxLoading>
+          <RectGraduallyShowLoading speed={speed} color={color} size={size}></RectGraduallyShowLoading>
         </Container>
       );
     }

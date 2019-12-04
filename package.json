@@ -1,7 +1,7 @@
 {
   "name": "react-loadingg",
   "version": "1.5.2",
-  "description": "A React component library.",
+  "description": "A load animation component library based on React",
   "main": "lib/hui.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
