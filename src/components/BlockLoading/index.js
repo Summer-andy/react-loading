@@ -32,7 +32,7 @@ const ItemFour = styled(Item)`
   animation: ${animateFour} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
-const BlockLoading = ({ style, speed }) => {
+const BlockLoading = ({ style, speed, color }) => {
   return (
     <LoadContainer style={style} speed={speed}>
       <ItemFirst speed={speed}></ItemFirst>

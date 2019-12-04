@@ -20,14 +20,14 @@ const opacityChange = keyframes`
 `
 
 const LoadContainer = styled.div`
-  width: 30px;
-  height: 30px;
+  width: ${props => props.size === 'small' ? 26 : (props.size === 'large' ? 34 : 30)}px;
+  height: ${props => props.size === 'small' ? 26 : (props.size === 'large' ? 34 : 30)}px;
   position: relative;
   overflow: hidden;
   animation: ${rotate} ${props => props.speed || 2.4 }s linear infinite;
   > div {
-    width: 12px;
-    height: 12px;
+    width: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+    height: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
     border-radius: 50%;
     position: absolute;
     background-color: ${props => props.color || '#00adb5' };
@@ -67,13 +67,13 @@ const CircleFour = styled.div`
   bottom: 0;
 `
 
-const RotateCircleLoading = ({ style, color, speed }) => {
+const RotateCircleLoading = ({ style, color, speed, size }) => {
   return (
-    <LoadContainer style={style} speed={speed} color={color}>
-      <CircleOne color={color} speed={speed} />
-      <CircleTwo color={color} speed={speed} />
-      <CircleThree color={color} speed={speed} />
-      <CircleFour color={color} speed={speed} />
+    <LoadContainer style={style} speed={speed} color={color} size={size}>
+      <CircleOne color={color} speed={speed} size={size}/>
+      <CircleTwo color={color} speed={speed} size={size}/>
+      <CircleThree color={color} speed={speed} size={size}/>
+      <CircleFour color={color} speed={speed} size={size}/>
     </LoadContainer>
   );
 };

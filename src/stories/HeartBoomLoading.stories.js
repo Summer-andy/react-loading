@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, text } from '@storybook/addon-knobs';
-import { RotateCircleLoading } from '~/components';
+import { HeartBoomLoading } from '~/components';
 import Container from './compoment/Container';
-storiesOf('RotateCircleLoading', module)
+storiesOf('HeartBoomLoading', module)
   .addDecorator(withKnobs)
   .add(
-    'RotateCircleLoading',
+    'HeartBoomLoading',
     () => {
-      let speed = 1;
+      let speed = 2;
       let color = '';
       let size = '';
       speed = number('动画速度(s)');
@@ -16,7 +16,7 @@ storiesOf('RotateCircleLoading', module)
       size = text('尺寸');
       return (
         <Container>
-          <RotateCircleLoading speed={speed} color={color} size={size}></RotateCircleLoading>
+          <HeartBoomLoading speed={speed} color={color} size={size}></HeartBoomLoading>
         </Container>
       );
     }

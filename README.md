@@ -13,7 +13,7 @@
 </div>
 
 ### 项目介绍
-基于 React 的 Loading 组件。
+一个基于 React 的 Loading 组件库。
 
 #### Demo
 
@@ -36,28 +36,34 @@ import { BoxLoading } from 'react-loadingg'
 
 #### 🎉 组件 API
 
-| 组件                 | color | speed | style |
-| -------------------- | ----- | ----- | ----- |
-| BabelLoading         | ✅    | ✅    | ✅    |
-| BlockLoading         | ✅    | 🚧    | ✅    |
-| BoxLoading           | ✅    | ✅    | ✅    |
-| BlockReserveLoading  | ✅    | ✅    | ✅    |
-| CircleLoading        | ✅    | ✅    | ✅    |
-| CircleToBlockLoading | ✅    | 🚧    | ✅    |
-| CommonLoading        | ✅    | 🚧    | ✅    |
-| DisappearedLoading   | ✅    | ✅    | ✅    |
-| LoopCircleLoading    | ✅    | 🚧    | ✅    |
-| NineCellLoading      | ✅    | ✅    | ✅    |
-| TouchBallLoading     | ✅    | ✅    | ✅    |
-| TransverseLoading    | ✅    | 🚧    | ✅    |
-| WaveLoading          | ✅    | 🚧    | ✅    |
-| WaveTopBottomLoading | ✅    | ✅    | ✅    |
-| WindMillLoading      | ✅    | ✅    | ✅    |
-| JumpCircleLoading    | ✅    | ✅    | ✅    |
-| MeteorRainLoading    | ✅    | ✅    | ✅    |
-| RotateCircleLoading  | ✅    | ✅    | ✅    |
-| StickyBallLoading    | ✅    | ✅    | ✅    |
-| SemipolarLoading     | ✅    | ✅    | ✅    |
+| 组件                 | color | speed | size  | style | 
+| -------------------- | ----- | ----- | ----- | ----- | 
+| BabelLoading         | ✅    | ✅    | 🚧   | ✅    |
+| BlockLoading         | ✅    | 🚧    | 🚧   | ✅    | 
+| BoxLoading           | ✅    | ✅    | 🚧   | ✅    | 
+| BlockReserveLoading  | ✅    | ✅    | 🚧   | ✅    | 
+| CircleLoading        | ✅    | ✅    | 🚧   | ✅    | 
+| CircleToBlockLoading | ✅    | 🚧    | 🚧   | ✅    | 
+| CommonLoading        | ✅    | 🚧    | 🚧   | ✅    | 
+| DisappearedLoading   | ✅    | ✅    | 🚧   | ✅    | 
+| LoopCircleLoading    | ✅    | 🚧    | 🚧   | ✅    | 
+| NineCellLoading      | ✅    | ✅    | 🚧   | ✅    | 
+| TouchBallLoading     | ✅    | ✅    | 🚧   | ✅    | 
+| TransverseLoading    | ✅    | 🚧    | 🚧   | ✅    | 
+| WaveLoading          | ✅    | 🚧    | 🚧   | ✅    | 
+| WaveTopBottomLoading | ✅    | ✅    | 🚧   | ✅    | 
+| WindMillLoading      | ✅    | ✅    | 🚧   | ✅    | 
+| JumpCircleLoading    | ✅    | ✅    | ✅   | ✅    | 
+| MeteorRainLoading    | ✅    | ✅    | ✅   | ✅    | 
+| RotateCircleLoading  | ✅    | ✅    | ✅   | ✅    | 
+| StickyBallLoading    | ✅    | ✅    | ✅   | ✅    | 
+| SemipolarLoading     | ✅    | ✅    | ✅   | ✅    | 
+| SolarSystemLoading   | ✅    | ✅    | ✅   | ✅    |
+| LadderLoading        | ✅    | ✅    | ✅   | ✅    |
+| HeartBoomLoading     | ✅    | ✅    | ✅   | ✅    |
+| RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
+| RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
+
 #### ❤️ 组件列表
 
 - [x] BlockLoading
@@ -80,6 +86,11 @@ import { BoxLoading } from 'react-loadingg'
 - [x] RotateCircleLoading
 - [x] StickyBallLoading
 - [x] SemipolarLoading
+- [x] SolarSystemLoading
+- [x] LadderLoading
+- [x] HeartBoomLoading
+- [x] RollBoxLoading
+- [x] RectGraduallyShowLoading
 - [ ] 持续开发中...
 
 #### ⌨️ 组件开发
