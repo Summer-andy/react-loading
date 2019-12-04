@@ -1,6 +1,6 @@
 {
   "name": "react-loadingg",
-  "version": "1.5.2",
+  "version": "1.6.0-alpha.0",
   "description": "A React component library.",
   "main": "lib/index.js",
   "publishConfig": {
@@ -54,7 +54,7 @@
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-safe-parser": "^4.0.1",
     "prop-types": "^15.7.2",

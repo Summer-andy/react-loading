@@ -12,7 +12,7 @@ storiesOf('TouchBallLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <TouchBallLoading speed={speed} color={color} style={{ width: 100, height: 100 }} speed={1}></TouchBallLoading>
+        <TouchBallLoading speed={speed} color={color} speed={1}></TouchBallLoading>
       </Container>
     );
   });

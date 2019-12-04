@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Rotate, animateFirst, animateTwo, animateThree, animateFour } from './animate';
+import { commonStyle } from '../utils/style';
 const LoadContainer = styled.div`
   width: 45px;
   height: 45px;
@@ -32,7 +33,7 @@ const ItemFour = styled(Item)`
   animation: ${animateFour} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
-const BlockLoading = ({ style, speed, color }) => {
+const BlockLoading = ({ style = commonStyle, speed }) => {
   return (
     <LoadContainer style={style} speed={speed}>
       <ItemFirst speed={speed}></ItemFirst>

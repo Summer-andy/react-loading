@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle } from '../utils/style';
 const bouncedelay = keyframes`
   0% {
     transform: rotate(360deg);
@@ -14,13 +14,13 @@ const bouncedelay = keyframes`
 `;
 
 const LoadingContainer = styled.div`
-  display: block;
   height: 0;
   width: 4px;
   border-width: 0 4px 60px 4px;
   border-style: none solid solid;
   border-color: transparent transparent ${props => props.color || '#00adb5'};
   position: relative;
+  padding-top: 25px;
 `;
 
 const ItemFirst = styled.div`
@@ -71,7 +71,7 @@ const Con = styled.div`
   animation: ${bouncedelay} ${props => props.speed || 5}s infinite linear;
 `;
 
-const WindMillLoading = ({ style, color, speed }) => {
+const WindMillLoading = ({ style = commonStyle, color, speed }) => {
   return (
     <LoadingContainer style={style} color={color}>
       <Center color={color} />

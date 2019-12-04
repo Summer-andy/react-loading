@@ -10,7 +10,7 @@ storiesOf('LoopCircleLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <LoopCircleLoading color={color} style={{ margin: "100px 60px" }}></LoopCircleLoading>
+        <LoopCircleLoading color={color}></LoopCircleLoading>
       </Container>
     );
   });

@@ -114,6 +114,11 @@ $ npm run build
 $ npm run release
 ```
 
+
+#### 🛎 组件开发规范 
+- 所有单个```不分离```元素的组件的size分别为large(30px)、default(26px)、small(22px)
+- 所有单个```分离```的元素的组件的size分别为large(14px)、default(12px)、small(10px)
+
 #### 🤝 组件提交规范
 
 - perf: 优化相关，比如提升性能、体验
@@ -133,3 +138,13 @@ $ npm run release
 
 - 模块功能开发(feature/xxx)
 - Bug 修改(bug/xxx)
+
+#### 🎉 FAQ
+  ##### 🛎 我只想用一个```BabelLoading```，但似乎我必须 import 整个 react-loadingg:
+  ##### 试试[babel-plugin-import](https://github.com/ant-design/babel-plugin-import),或者用下面这种方式来按需加载
+
+  ```
+  import BabelLoading from 'react-loadingg/lib/BabelLoading'
+  ```
+  
+  ##### 🛎 组件默认完全居中, 如果你想修改组件的样式,那么组件默认的完全居中的样式会被覆盖。

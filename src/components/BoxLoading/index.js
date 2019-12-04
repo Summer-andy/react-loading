@@ -1,5 +1,6 @@
 import React from 'react';
 import { shadow, animate } from './animate';
+import { commonStyle } from '../utils/style';
 import styled from 'styled-components';
 const LoadContainer = styled.div`
     width: 50px;
@@ -29,7 +30,7 @@ const LoadContainer = styled.div`
     }
 `;
 
-const BoxLoading = ({ style, color, speed }) => {
+const BoxLoading = ({ style = commonStyle, color, speed }) => {
   return (
     <LoadContainer style={style} color={color} speed={speed}></LoadContainer>
   );

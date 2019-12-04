@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle } from '../utils/style';
 const changeSharp = keyframes`
   0% {
     transform: translateX(0) rotate(45deg) scale(0);
@@ -45,7 +45,7 @@ const ItemThree = styled(Item)`
  animation-delay:  calc(3s * 4 / -1.5);
 `
 
-const CircleToBlockLoading = ({ style, color }) => {
+const CircleToBlockLoading = ({ style = commonStyle, color }) => {
   return (
     <LoadContainer style={style}>
       <ItemFirst color={color} />

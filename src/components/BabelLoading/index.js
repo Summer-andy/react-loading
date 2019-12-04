@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle } from '../utils/style';
 
 const animation = keyframes`
 	0% {
@@ -24,7 +25,7 @@ const Container = styled.div`
   animation: ${animation}  ${props => props.speed || 2}s linear infinite;
 `
 
-const BabelLoading = ({ style, speed, color }) => {
+const BabelLoading = ({ style = commonStyle, speed, color }) => {
   return (
     <Container {...{style, speed, color }} />
   );

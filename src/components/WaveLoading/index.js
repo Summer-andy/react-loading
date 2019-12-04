@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle } from '../utils/style';
 const stretchdelay = keyframes`
   0%,
   40%,
@@ -48,7 +48,7 @@ const BoxLoadingFive = styled(box)`
   animation-delay: -0.8s;
 `;
 
-const WaveLoading = ({ style, color }) => {
+const WaveLoading = ({ style = commonStyle, color }) => {
   return (
     <LoadContainer style={style}>
       <BoxLoadingFirst color={color} />
