@@ -12,9 +12,10 @@
 [English](https://github.com/sixiaodong123/react-loading) &#124; 简体中文
 
 </div>
+
 ## 介绍
 
-`React-Loading`是一个基于 React 的 Loading 动画组件库，拥有许多精致且漂亮的 loading 组件，在你的项目中适当的地方与时刻如页面局部处于等待异步数据或正在渲染过程时给予加载动效提示，会有效缓解用户的焦虑。本组件库支持按需加载，那么，现在就挑选一个喜欢的 Loading 组件，丰富你的项目吧～
+`React-Loading`是一个基于 React 的 Loading 动画组件库，拥有许多精致且漂亮的 loading 组件，在你的项目中适当的地方与时刻比如页面局部处于等待异步数据或正在渲染过程时给予加载动效提示，会有效缓解用户的焦虑。本组件库支持按需加载，那么，现在就挑选一个喜欢的 Loading 组件，丰富你的项目吧～
 
 🎉 [查看 demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
