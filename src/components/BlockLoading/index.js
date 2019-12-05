@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Rotate, animateFirst, animateTwo, animateThree, animateFour } from './animate';
-import { commonStyle } from '../utils/style';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 const LoadContainer = styled.div`
-  width: 45px;
-  height: 45px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
+  height: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -13,8 +13,9 @@ const LoadContainer = styled.div`
 `;
 
 const Item = styled.div`
-  width: 20px;
-  height: 20px;
+  width: ${props => sizeItem[props.size] || sizeItem['default'] };
+  height: ${props => sizeItem[props.size] || sizeItem['default'] };
+  margin: auto;
 `;
 
 const ItemFirst = styled(Item)`
@@ -33,13 +34,13 @@ const ItemFour = styled(Item)`
   animation: ${animateFour} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
-const BlockLoading = ({ style = commonStyle, speed }) => {
+const BlockLoading = ({ style = commonStyle, speed, size="default" }) => {
   return (
-    <LoadContainer style={style} speed={speed}>
-      <ItemFirst speed={speed}></ItemFirst>
-      <ItemTwo speed={speed}></ItemTwo>
-      <ItemFour speed={speed}></ItemFour>
-      <ItemThree speed={speed}></ItemThree>
+    <LoadContainer style={style} speed={speed} size={size}>
+      <ItemFirst speed={speed} size={size}></ItemFirst>
+      <ItemTwo speed={speed} size={size}></ItemTwo>
+      <ItemFour speed={speed} size={size}></ItemFour>
+      <ItemThree speed={speed} size={size}></ItemThree>
     </LoadContainer>
   );
 };
