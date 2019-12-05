@@ -5,11 +5,15 @@
 </p>
 
 <h1 align="center">A React-based Loading animation component library</h1>
+<div align="center">
 
 [![npm version](https://img.shields.io/npm/v/react-loading)](https://www.npmjs.com/package/react-loadingg) [![](https://img.shields.io/github/license/sixiaodong123/react-loading)](https://github.com/sixiaodong123/react-loading/blob/master/LICENSE) [![](https://img.shields.io/npm/dm/react-loadingg)](https://www.npmjs.com/package/react-loadingg)
 
-
 [简体中文](https://github.com/sixiaodong123/react-loading/blob/master/README-zh-Hans.md) &#124; English
+
+</div>
+
+
 
 ## Introduction
 
