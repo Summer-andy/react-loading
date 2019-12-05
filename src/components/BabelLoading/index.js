@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { commonStyle } from '../utils/style';
+import { commonStyle, sizeContainer, borderRadiusContainerSize } from '../utils/style';
 
 const animation = keyframes`
 	0% {
@@ -18,16 +18,16 @@ const animation = keyframes`
 `
 
 const Container = styled.div`
-  height: 50px;
-  width: 50px;
-  border-radius:25px;
+  height: ${props => sizeContainer[props.size] || sizeContainer['default']};
+  width: ${props => sizeContainer[props.size]|| sizeContainer['default']};
+  border-radius:${props => borderRadiusContainerSize[props.size] || borderRadiusContainerSize['default']};
   background:  ${props => props.color || '#00adb5'};
   animation: ${animation}  ${props => props.speed || 2}s linear infinite;
 `
 
-const BabelLoading = ({ style = commonStyle, speed, color }) => {
+const BabelLoading = ({ style = commonStyle, speed, color, size = 'default' }) => {
   return (
-    <Container {...{style, speed, color }} />
+    <Container {...{style, speed, color, size }} />
   );
 };
 
