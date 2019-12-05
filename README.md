@@ -65,6 +65,15 @@ import { BoxLoading } from 'react-loadingg'
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
 
 #### ❤️ 组件列表
+| 组件                 | 组件 | 组件 | 组件  | 组件 | 
+| -------------------- | ----- | ----- | ----- | ----- | 
+| [x] BlockLoading     | [x] BoxLoading      | [x] BlockReserveLoading    | [x] CircleLoading      |
+| [x] CircleToBlockLoading | [x] CommonLoading | [x] DisappearedLoading | [x] LoopCircleLoading |
+| [x] NineCellLoading  | [x] TouchBallLoading  | [x] TransverseLoading  | [x] WaveLoading      |
+| [x] WaveTopBottomLoading | [x] WindMillLoading | [x] BabelLoading| [x] JumpCircleLoading |
+| [x] MeteorRainLoading| [x] RotateCircleLoading| [x] StickyBallLoading| [x] SemipolarLoading |
+| [x] SolarSystemLoading| [x] LadderLoading| [x] HeartBoomLoading| [x] RollBoxLoading|
+| [x] RectGraduallyShowLoading| [ ] 持续开发中... | [ ] 持续开发中... | [ ] 持续开发中... |
 
 - [x] BlockLoading
 - [x] BoxLoading
