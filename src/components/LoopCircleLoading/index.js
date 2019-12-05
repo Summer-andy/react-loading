@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle  } from '../utils/style';
 const bouncedelay = keyframes`
   0%,
   80%,
@@ -117,7 +117,7 @@ const CircleFour2 = styled(circle)`
   bottom: 0;
 `;
 
-const LoopCircleLoading = ({ style, color }) => {
+const LoopCircleLoading = ({ style = commonStyle, color }) => {
   return (
     <LoadContainer style={style}>
       <ContainerFirst>

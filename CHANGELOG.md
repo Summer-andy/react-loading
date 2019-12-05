@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.5.2...v1.6.0-alpha.0) (2019-12-03)
+
+
+### Bug Fixes
+
+* 修复package.json中组件入口 ([9b7429c](https://github.com/sixiaodong123/react-loading/commit/9b7429c))
+* 修复不能更改颜色和速度问题 ([539fc78](https://github.com/sixiaodong123/react-loading/commit/539fc78))
+* 修复项目中图片引用失效问题 ([ea2af50](https://github.com/sixiaodong123/react-loading/commit/ea2af50))
+
+
+### Features
+
+* 新增5个Loading组件 ([ff20c7a](https://github.com/sixiaodong123/react-loading/commit/ff20c7a))
+* 新增BabelLoading ([e367c39](https://github.com/sixiaodong123/react-loading/commit/e367c39))
+
+
+
 ### [1.5.2](https://github.com/sixiaodong123/react-loading/compare/v1.5.0...v1.5.2) (2019-11-28)
 
 

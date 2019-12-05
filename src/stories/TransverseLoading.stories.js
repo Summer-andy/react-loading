@@ -10,7 +10,7 @@ storiesOf('TransverseLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <TransverseLoading  color={color}  style={{ margin: "100px 60px" }}></TransverseLoading>
+        <TransverseLoading  color={color} ></TransverseLoading>
       </Container>
     );
   });

@@ -10,7 +10,7 @@ storiesOf('CommonLoading', module)
     color = text('颜色')
     return (
       <Container>
-        <CommonLoading color={color} style={{ margin: "100px 60px" }}></CommonLoading>
+        <CommonLoading color={color}></CommonLoading>
       </Container>
     );
   });
