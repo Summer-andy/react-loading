@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">一个基于 React 的 Loading 动画组件库</h1>
+<h1 align="center">A React-based Loading animation component library</h1>
 
 <div align="center">
 
@@ -12,21 +12,22 @@
 
 </div>
 
-## 介绍
+## Introduction
 
-`React-Loading`是一个基于 React 的 Loading 动画组件库，拥有许多精致且漂亮的 loading 组件，在你的项目中适当的地方与时刻如页面局部处于等待异步数据或正在渲染过程时给予加载动效提示，会有效缓解用户的焦虑。本组件库支持按需加载，那么，现在就挑选一个喜欢的 Loading 组件，丰富你的项目吧～
+`React-Loading` is a React-based Loading animation component library includes many exquisite and beautiful loading components. It will effectively relieve the user's anxiety when you give loading dynamics tips at the appropriate place and moment in your project. This component library supports on-demand loading, so pick a favorite Loading component now to enrich your project ~
 
-🎉 [查看 demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
-## 快速使用
+🎉 [check demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
-#### 🛠 安装
+## Quick Start
+
+#### 🛠 Install
 
 ```
 npm install react-loadingg
 ```
 
-#### 📦 使用
+#### 📦 Use
 
 ```
 import { BoxLoading } from 'react-loadingg';
@@ -34,20 +35,20 @@ import { BoxLoading } from 'react-loadingg';
 <BoxLoading />;
 ```
 
-## 组件相关
+## Components related
 
 #### 📕 API
 
-| 参数          |  说明        | 类型          | 默认值  |
+| Parameter          |  Description        | Type          | Default  |
 | ------------ | ------------ | ------------ | ------------ |
-| color  | 设置颜色，支持16进制与RGB | string  |  '#00adb5' |
-| speed  | 设置动画速度  | number(秒)  | - |
-| size   | 设置组件大小，可选值为 `small` `default` `large`  | string  |  'default' |
-| style  | 设置组件样式  | Object  |  - |
+| color  | Set color, support hexadecimal and RGB | string  |  '#00adb5' |
+| speed  | Set animation speed  | number(s)  | - |
+| size   | Set the component size, the optional value is `small` `default` `large`  | string  |  'default' |
+| style  | Style the component  | Object  |  - |
 
-#### 📝 组件列表
+#### 📝 Components list
 
-| 组件                 | color | speed | size  | style | 
+| components           | color | speed | size  | style | 
 | -------------------- | ----- | ----- | ----- | ----- | 
 | BabelLoading         | ✅    | ✅    | 🚧   | ✅    |
 | BlockLoading         | ✅    | 🚧    | 🚧   | ✅    | 
@@ -75,63 +76,62 @@ import { BoxLoading } from 'react-loadingg';
 | RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
 
-#### ⌨️ 组件开发
+#### ⌨️ Participate in development
 
-首次运行项目
+Running the project for the first time
 ```bash
 $ git clone https://github.com/sixiaodong123/react-loading
 $ npm run dev
 ```
 
-`P.S.`: 若启动不成功，请先安装`yarn`
+`P.S.`: If startup fails, please install`yarn`first
 ```bash
 npm install -g yarn
 ```
 
-二次项目运行
+Running the project for the second time
 
 ```bash
 npm run storybook
 ```
 
-#### 🔨 组件打包
+#### 🔨 Component packaging
 
 ```bash
 $ npm run build
 ```
 
-#### 🎉 组件发布
+#### 🎉 Component release
 
 ```bash
 $ npm run release
 ```
 
-#### 🤝 组件提交规范
+#### 🤝 Component submission specifications
 
-- perf: 优化相关，比如提升性能、体验
-- feat: 新功能(feature)
-- fix: 修补 bug
-- docs: 文档(documentation)
-- style: 格式(不影响代码运行的变动)
-- refactor: 重构(即不是新增功能，也不是修改 bug 的代码变动)
-- test: 增加测试
-- chore: 构建过程或辅助工具的变动
-- upgrade: 第三方库升级
-- revert: 回滚
-- scope: commit 影响的范围, 比如: route, component, utils, build...
+- perf: optimization related, such as improving performance and experience
+- feat: new feature
+- fix: fix bug
+- docs: add or change documentation
+- style: format (changes that do not affect code execution)
+- refactor: refactoring (neither new features nor code changes that modify bugs)
+- test: add tests
+- chore: changes in the build process or aids
+- upgrade: third-party library upgrades
+- revert: rollback
+- scope: the scope of the commit, such as: route, component, utils, build ...
 - merge: Merge branch ? of ?.
 
-#### ❤️ 组件分支管理
+#### ❤️ Component branch management
 
-- 模块功能开发(feature/xxx)
-- Bug 修改(bug/xxx)
+- Module Function Development (feature / xxx)
+- Bug fixes (bug / xxx)
 
 #### FAQ
-##### 🛎 我只想用一个```BabelLoading```，但似乎我必须 import 整个 react-loadingg:
-##### 试试[babel-plugin-import](https://github.com/ant-design/babel-plugin-import),或者用下面这种方式来按需加载
-
+##### 🛎 I just want to use ```BabelLoading```，but it seems that I have to `import` the whole `react-loadingg`:
+##### Try[babel-plugin-import](https://github.com/ant-design/babel-plugin-import), or load on demand in the following way
 ```
 import BabelLoading from 'react-loadingg/lib/BabelLoading'
 ```
   
-##### 🛎 组件默认完全居中, 如果你想修改组件的样式,那么组件默认的完全居中的样式会被覆盖。
+##### 🛎 The component is completely centered by default. If you want to modify the component's style, the component's default completely centered style will be overwritten.
