@@ -22,8 +22,8 @@ const LoadingContainer = styled.div`
   background-color: rgba(0, 169, 178, 0.2);
   &::before {
     content: '';
-    width: 70px;
-    height: 70px;
+    width: 25px;
+    height: 25px;
     background-color: ${props => props.color || '#00adb5'};
     position: absolute;
     left: 50%;
