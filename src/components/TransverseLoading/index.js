@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { commonStyle } from '../utils/style';
+import { commonStyle, sizeItem } from '../utils/style';
 const bouncedelay = keyframes`
   0%,
   80%,
@@ -19,12 +19,12 @@ const LoadingContainer = styled.div`
 `;
 
 const load = styled.div`
-  width: 20px;
-  height: 20px;
+  width: ${props => sizeItem[props.size] || sizeItem['default'] };
+  height: ${props => sizeItem[props.size] || sizeItem['default'] };
   background-color: ${props => props.color || '#00adb5'};
   border-radius: 100%;
   display: inline-block;
-  animation: ${bouncedelay} 1.4s infinite ease-in-out;
+  animation: ${bouncedelay} ${props => props.speed || 1.4}s infinite ease-in-out;
   animation-fill-mode: both;
 `
 
@@ -41,12 +41,12 @@ const LoadThree = styled(load)`
 
 `
 
-const TransverseLoading = ({ style = commonStyle, color }) => {
+const TransverseLoading = ({ style = commonStyle, color, speed, size="default" }) => {
   return (
     <LoadingContainer style={style}>
-        <LoadFirst color={color} />
-        <LoadTwo color={color} />
-        <LoadThree  color={color}/>
+        <LoadFirst color={color} size={size} speed={speed} />
+        <LoadTwo color={color} size={size} speed={speed} />
+        <LoadThree color={color} size={size} speed={speed} />
     </LoadingContainer>
   );
 };
