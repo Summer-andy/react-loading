@@ -64,7 +64,7 @@ import { BoxLoading } from 'react-loadingg';
 | LoopCircleLoading    | ✅    | ✅    | ✅   | ✅    | 
 | NineCellLoading      | ✅    | ✅    | 🚧   | ✅    | 
 | TouchBallLoading     | ✅    | ✅    | ✅   | ✅    | 
-| TransverseLoading    | ✅    | 🚧    | 🚧   | ✅    | 
+| TransverseLoading    | ✅    | ✅    | ✅   | ✅    | 
 | WaveLoading          | ✅    | ✅    | ✅   | ✅    | 
 | WaveTopBottomLoading | ✅    | ✅    | ✅   | ✅    | 
 | WindMillLoading      | ✅    | ✅    | ✅   | ✅    | 
