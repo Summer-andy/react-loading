@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { commonStyle  } from "../utils/style";
+import { commonStyle, sizeItem  } from "../utils/style";
 const leftAnimate = keyframes`
   50%,
   100% {
@@ -18,8 +18,8 @@ const rightAnimate = keyframes`
 `
 
 const LoadingContainer = styled.div`
-  width: 80px;
-  height: 80px;
+  width: ${props => props.size === 'small' ? 50 : (props.size === 'large' ? 68 : 59)}px;
+  height:  ${props => props.size === 'small' ? 50 : (props.size === 'large' ? 68 : 59)}px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +27,8 @@ const LoadingContainer = styled.div`
 `;
 
 const Item = styled.div`
-   width: 20%;
-  height: 20%;
+   width: ${props => sizeItem[props.size] || sizeItem['default']};
+  height: ${props => sizeItem[props.size] || sizeItem['default']};
   border-radius: 50%;
   background: ${props => props.color || '#00adb5'};
 `;
@@ -43,12 +43,12 @@ const ItemRight = styled(Item)`
   animation: ${rightAnimate} ${props => props.speed || 1}s ease-out alternate infinite ;
 `
 
-const TouchBallLoading = ({ style = commonStyle, color, speed }) => {
+const TouchBallLoading = ({ style = commonStyle, color, speed, size }) => {
   return (
-    <LoadingContainer style={style}>
-      <ItemLeft color={color} speed={speed} />
-      <Item color={color} />
-      <ItemRight color={color} speed={speed} />
+    <LoadingContainer style={style} size={size}>
+      <ItemLeft color={color} speed={speed} size={size} />
+      <Item color={color} size={size} />
+      <ItemRight color={color} speed={speed} size={size} />
     </LoadingContainer>
   );
 };

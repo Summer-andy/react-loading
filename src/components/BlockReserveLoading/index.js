@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { commonStyle } from '../utils/style';
+import { commonStyle, sizeContainer } from '../utils/style';
 const animate = keyframes`
   50% {
     transform: rotateY(-180deg);
@@ -24,17 +24,17 @@ const Item = styled.div`
   right: 0;
   top: 0;
   bottom: 0;
-  width: 30%;
-  height: 30%;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default']};
+  height: ${props => sizeContainer[props.size] || sizeContainer['default']};
   transform: rotate(0);
   background: ${props => props.color || '#00adb5'};
   animation: ${animate} ${props => props.speed || 1}s infinite;
 `;
 
-const BlockReserveLoading = ({ style = commonStyle, color, speed }) => {
+const BlockReserveLoading = ({ style = commonStyle, color, speed, size="default" }) => {
   return (
     <LoadingContainer style={style}>
-      <Item color={color} speed={speed} />
+      <Item color={color} speed={speed} size={size} />
     </LoadingContainer>
   );
 };
