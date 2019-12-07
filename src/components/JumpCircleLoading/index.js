@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const bounce = keyframes`
   0% {
@@ -15,37 +16,36 @@ const bounce = keyframes`
 `;
 
 const LoadContainer = styled.div`
-  width: 50px;
-  height: 64px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
+  height: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   position: relative;
-  overflow: hidden;
-  transform: scaleX()
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 `;
 
 const Circle = styled.div`
-  width: ${props => props.size === 'small' ? 12 : (props.size === 'large' ? 20 : 16)}px;
-  height: ${props => props.size === 'small' ? 12 : (props.size === 'large' ? 20 : 16)}px;
+  width: ${props => sizeItem[props.size] || sizeItem['default'] };
+  height: ${props => sizeItem[props.size] || sizeItem['default'] };
   border-radius: 50%;
-  position: absolute;
-  bottom: 4px;
-  left: ${props => props.size === 'small' ? 19 : (props.size === 'large' ? 15 : 17)}px;
   background-color: ${props => props.color || '#00adb5' };
   animation: ${bounce} ${props => props.speed || 0.5}s ease-out infinite alternate;
 `;
 
 const BottomReac = styled.div`
-  width: ${props => props.size === 'small' ? 24 : (props.size === 'large' ? 32 : 28)}px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   height: 4px;
   position: absolute;
-  bottom: 0px;
-  left: ${props => props.size === 'small' ? 13 : (props.size === 'large' ? 9 : 11)}px;
+  bottom: 0;
+  left: 0;
   background-color: ${props => props.color || '#00adb5' };
 `
 
 
-const JumpCircleLoading = ({ style, color, speed, size }) => {
+const JumpCircleLoading = ({ style = commonStyle, color, speed, size = 'default'}) => {
   return (
-    <LoadContainer style={style}>
+    <LoadContainer style={style} size={size}>
       <Circle color={color} speed={speed} size={size}/>
       <BottomReac color={color} size={size}/>
     </LoadContainer>

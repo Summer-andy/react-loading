@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const leftLadderMove = keyframes`
   0% {
@@ -138,7 +139,7 @@ const RowLadderThree = styled.div`
   animation: ${RowLadderThreeMove} ${props => props.speed || 4}s ease infinite;
 `
 
-const LadderLoading = ({ style, color, speed, size }) => {
+const LadderLoading = ({ style = commonStyle, color, speed, size = 'default'}) => {
   return (
     <LoadContainer style={style}>
       <LeftLadder color={color} speed={speed} size={size}/>

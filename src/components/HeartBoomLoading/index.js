@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const boom = keyframes`
   0% {
@@ -21,8 +22,8 @@ const boom = keyframes`
 
 
 const LoadContainer = styled.div`
-  width: 50px;
-  height: 50px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
+  height: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   position: relative;
   display: flex;
   align-items: center;
@@ -31,8 +32,8 @@ const LoadContainer = styled.div`
 `;
 
 const Heart = styled.div`
-  width: ${props => props.size === 'small' ? 22 : (props.size === 'large' ? 30 : 26)}px;
-  height: ${props => props.size === 'small' ? 22 : (props.size === 'large' ? 30 : 26)}px;
+  width: ${props => sizeItem[props.size] || sizeItem[props.size] };
+  height: ${props => sizeItem[props.size] || sizeItem[props.size] };
   background-color: ${props => props.color || '#00adb5'};
   position: relative;
   transform: rotate(45deg);
@@ -59,9 +60,9 @@ const Heart = styled.div`
   }
 `
 
-const HeartBoomLoading = ({ style, color, speed, size }) => {
+const HeartBoomLoading = ({ style = commonStyle, color, speed, size = 'default'}) => {
   return (
-    <LoadContainer style={style}>
+    <LoadContainer style={style} size={size}>
       <Heart color={color} speed={speed} size={size}/>
     </LoadContainer>
   );

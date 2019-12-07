@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle } from '../utils/style';
 
 const rotate = keyframes`
   100% {
@@ -77,7 +78,7 @@ const Mars = styled.div`
   top: ${props => props.size === 'small' ? 1 : (props.size === 'large' ? 3 : 2)}px;
 `
 
-const SolarSystemLoading = ({ style, color, speed, size }) => {
+const SolarSystemLoading = ({ style = commonStyle, color, speed, size = 'default' }) => {
   return (
     <LoadContainer style={style} size={size}>
       <Sun color={color} size={size}/>

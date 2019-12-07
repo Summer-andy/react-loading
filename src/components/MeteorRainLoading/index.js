@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const scaling = keyframes`
   0% {
@@ -79,11 +80,10 @@ const Star = styled.div`
   background: linear-gradient(-45deg, ${props => props.color || '#00adb5'}, rgba(0, 0, 255, 0));
   position: absolute;
   border-radius: 50%;
-  /* filter: drop-shadow(0 0 6px #c7ecee); */
   animation: ${scaling} ${props => props.speed || 3}s ease-in-out infinite, ${moveTo} ${props => props.speed || 3}s ease-in-out infinite;
 `
 
-const MeteorRainLoading = ({ style, color, speed, size }) => {
+const MeteorRainLoading = ({ style = commonStyle, color, speed, size = 'default' }) => {
   return (
     <LoadContainer style={style} size={size}>
       {
