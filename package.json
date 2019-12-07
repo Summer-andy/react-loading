@@ -1,6 +1,6 @@
 {
   "name": "react-loadingg",
-  "version": "1.6.0-alpha.0",
+  "version": "1.6.0",
   "description": "A React component library.",
   "main": "lib/index.js",
   "publishConfig": {

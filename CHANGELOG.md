@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.0-alpha.0...v1.6.0) (2019-12-07)
+
+
+### Bug Fixes
+
+*  merge master of fix/component ([9b0b603](https://github.com/sixiaodong123/react-loading/commit/9b0b603))
+* 修复打包 ([2f73475](https://github.com/sixiaodong123/react-loading/commit/2f73475))
+
+
+### Features
+
+* add five new loading component ([f8b3dbb](https://github.com/sixiaodong123/react-loading/commit/f8b3dbb))
+* add RollBoxLoading component ([ccb7ecc](https://github.com/sixiaodong123/react-loading/commit/ccb7ecc))
+* 增加组件SolarSystemLoading组件 ([a7ae5d8](https://github.com/sixiaodong123/react-loading/commit/a7ae5d8))
+* 新增Ladderoading ([7a2469e](https://github.com/sixiaodong123/react-loading/commit/7a2469e))
+* 新增三个Loading组件 ([471f0a6](https://github.com/sixiaodong123/react-loading/commit/471f0a6))
+
+
+
 ## [1.6.0-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.5.2...v1.6.0-alpha.0) (2019-12-03)
 
 
