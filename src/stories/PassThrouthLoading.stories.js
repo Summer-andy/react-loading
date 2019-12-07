@@ -1,18 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, number, text, radios } from '@storybook/addon-knobs';
-import { themes } from '@storybook/theming';
-import { BabelLoading } from '~/components';
+import { withKnobs, number, radios, text } from '@storybook/addon-knobs';
+import { PassThrouthLoading } from '~/components';
 import Container from './compoment/Container';
-storiesOf('BabelLoading', module)
+storiesOf('PassThrouthLoading', module)
   .addDecorator(withKnobs)
-  .addParameters({ options: { theme: themes.dark } })
   .add(
-    'BabelLoading',
+    'PassThrouthLoading',
     () => {
-
       let speed = 1;
-      let color = '';
       let size = radios(
         '动画尺寸',
         {
@@ -22,12 +18,11 @@ storiesOf('BabelLoading', module)
         },
         'default'
       );
-
       speed = number('动画速度(s)')
-      color = text('颜色')
+      let color = text('颜色')
       return (
         <Container>
-          <BabelLoading size={size} speed={speed} color={color}></BabelLoading>
+          <PassThrouthLoading color={color} size={size} speed={speed}></PassThrouthLoading>
         </Container>
       );
     }

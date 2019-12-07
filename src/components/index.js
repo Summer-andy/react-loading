@@ -23,3 +23,6 @@ export { default as LadderLoading } from './LadderLoading';
 export { default as HeartBoomLoading } from './HeartBoomLoading';
 export { default as RollBoxLoading } from './RollBoxLoading';
 export { default as RectGraduallyShowLoading } from './RectGraduallyShowLoading';
+export { default as PointSpreadLoading } from './PointSpreadLoading';
+export { default as ThreeHorseLoading } from  './ThreeHorseLoading';
+export { default as PassThrouthLoading } from './PassThrouthLoading'

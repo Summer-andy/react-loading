@@ -78,7 +78,9 @@ import { BoxLoading } from 'react-loadingg';
 | HeartBoomLoading     | ✅    | ✅    | ✅   | ✅    |
 | RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
-
+| PointSpreadLoading   | ✅    | ✅    | ✅   | ✅    |
+| ThreeHorseLoading   | ✅    | ✅    | ✅   | ✅    |
+| PassThrouthLoading   | ✅    | ✅    | ✅   | ✅    |
 #### ⌨️ Participate in development
 
 Running the project for the first time
