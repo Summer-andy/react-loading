@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.0...v1.6.1-alpha.0) (2019-12-07)
+
+
+### Bug Fixes
+
+* 修复组件内容过长, 更新文档 ([669dfe7](https://github.com/sixiaodong123/react-loading/commit/669dfe7))
+
+
+
 ## [1.6.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.0-alpha.0...v1.6.0) (2019-12-07)
 
 
