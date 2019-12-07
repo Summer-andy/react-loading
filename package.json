@@ -13,7 +13,7 @@
     "dev": "npm run storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --env production",
-    "build:lib": "cross-env OUTPUT_MODULE=commonjs babel ./src/components -d lib",
+    "build:lib": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/",
     "storybook": "start-storybook -p 9001",
     "build-storybook": "build-storybook",
     "release": "standard-version",
@@ -34,6 +34,7 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
@@ -49,6 +50,8 @@
     "@tulipjs/eslint-config": "^1.1.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-import": "^1.12.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^6.0.3",
     "css-loader": "^1.0.0",
     "husky": "^3.0.1",
     "less": "^3.9.0",
