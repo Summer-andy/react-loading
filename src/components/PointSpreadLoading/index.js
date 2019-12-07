@@ -18,8 +18,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
+  height: 120px;
+  width: 120px;
   overflow: hidden;
   animation-delay: 1s;
 `;
@@ -29,7 +29,7 @@ const Item = styled.div`
   height: ${props => sizeItem[props.size] || sizeItem['default']};
   border-radius: 50%;
   background-color: ${props => props.color || '#00adb5'};
-  margin: 7px;
+  margin:  7px;
   display: flex;
   justify-content: center;
   align-items: center;

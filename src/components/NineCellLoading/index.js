@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import { commonStyle, sizeContainer } from '../utils/style';
 const animate = keyframes`
   to {
     opacity: 0.3;
@@ -8,8 +8,8 @@ const animate = keyframes`
 `;
 
 const LoadContainer = styled.div`
-  width: 5em;
-  height: 5em;
+   height: calc( ${props => sizeContainer[props.size] || sizeContainer['default']} * 2) ;
+    width: calc( ${props => sizeContainer[props.size] || sizeContainer['default']} * 2) ;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -33,18 +33,18 @@ const LoadContainer = styled.div`
 `;
 
 const Item = styled.div`
-  width: 0.8em;
-  height: 0.8em;
+   height: calc( ${props => sizeContainer[props.size] || sizeContainer['default']} / 4) ;
+    width:calc( ${props => sizeContainer[props.size] || sizeContainer['default']} / 4) ;
   background-color: ${props => props.color || '#00adb5'};
   border-radius: 50%;
 animation: ${animate} ${props => props.speed || 1.5}s alternate ease-in-out infinite;
 `;
 
-const NineCellLoading = ({ style, color, speed }) => {
+const NineCellLoading = ({ style = commonStyle, color, size="default", speed }) => {
   return (
     <LoadContainer style={style} speed={speed}>
       {
-       Array.from(Array(9)).map((item, index) => <Item color={color} speed={speed} key={index}/>)
+       Array.from(Array(9)).map((item, index) => <Item size={size} color={color} speed={speed} key={index}/>)
       }
     </LoadContainer>
   );
