@@ -62,7 +62,7 @@ import { BoxLoading } from 'react-loadingg';
 | CommonLoading        | ✅    | 🚧    | 🚧   | ✅    | 
 | DisappearedLoading   | ✅    | ✅    | ✅   | ✅    | 
 | LoopCircleLoading    | ✅    | ✅    | ✅   | ✅    | 
-| NineCellLoading      | ✅    | ✅    | 🚧   | ✅    | 
+| NineCellLoading      | ✅    | ✅    | ✅   | ✅    | 
 | TouchBallLoading     | ✅    | ✅    | ✅   | ✅    | 
 | TransverseLoading    | ✅    | ✅    | ✅   | ✅    | 
 | WaveLoading          | ✅    | ✅    | ✅   | ✅    | 

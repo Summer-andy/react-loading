@@ -11,11 +11,8 @@ const animation = keyframes`
 `;
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 500px;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
   animation-delay: 1s;
 `;
@@ -26,7 +23,7 @@ const Item = styled.div`
     margin: ${props => props.size === 'small' ? -20 : (props.size === 'large' ? -75 : -50)}px 0 0 ${props => props.size === 'small' ? -20 : (props.size === 'large' ? -75 : -50)}px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #00adb5;
+    border-top-color: ${props => props.color || '#00adb5'};
     animation: ${animation} ${props => props.speed / 2 || 1.5}s linear infinite;
   &:before {
     content: "";
@@ -37,7 +34,7 @@ const Item = styled.div`
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #00adb5;
+    border-top-color: ${props => props.color || '#00adb5'};
     animation: ${animation}  ${props => props.speed || 3}s linear infinite;
   }
   &:after {
@@ -49,14 +46,14 @@ const Item = styled.div`
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #00adb5;
+    border-top-color: ${props => props.color || '#00adb5'};
     animation: ${animation}  ${props => props.speed / 3 || 1}s linear infinite;
   }
 `;
 const ThreeHorseLoading = ({ speed, color, size="default", style = commonStyle }) => {
   return (
-    <Container style={style}>
-      <Item speed={speed} size={size} />
+    <Container style={style} size={size}>
+      <Item speed={speed} size={size} style={style} color={color} />
     </Container>
   );
 };
