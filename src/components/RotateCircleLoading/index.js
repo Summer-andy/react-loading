@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const rotate = keyframes`
   0% {
@@ -20,14 +21,14 @@ const opacityChange = keyframes`
 `
 
 const LoadContainer = styled.div`
-  width: ${props => props.size === 'small' ? 26 : (props.size === 'large' ? 34 : 30)}px;
-  height: ${props => props.size === 'small' ? 26 : (props.size === 'large' ? 34 : 30)}px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
+  height: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   position: relative;
   overflow: hidden;
   animation: ${rotate} ${props => props.speed || 2.4 }s linear infinite;
   > div {
-    width: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
-    height: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+    width: ${props => sizeItem[props.size] || sizeItem[props.size] };
+    height: ${props => sizeItem[props.size] || sizeItem[props.size] };
     border-radius: 50%;
     position: absolute;
     background-color: ${props => props.color || '#00adb5' };
@@ -67,7 +68,7 @@ const CircleFour = styled.div`
   bottom: 0;
 `
 
-const RotateCircleLoading = ({ style, color, speed, size }) => {
+const RotateCircleLoading = ({ style = commonStyle, color, speed, size = 'default' }) => {
   return (
     <LoadContainer style={style} speed={speed} color={color} size={size}>
       <CircleOne color={color} speed={speed} size={size}/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle, sizeContainer, sizeItem } from '../utils/style';
 
 const rollOne = keyframes`
   0%,
@@ -61,15 +62,15 @@ const moveLeft = keyframes`
 
 
 const LoadContainer = styled.div`
-  width: ${props => props.size === 'small' ? 24 : (props.size === 'large' ? 36 : 30)}px;
-  height: ${props => props.size === 'small' ? 24 : (props.size === 'large' ? 36 : 30)}px;
+  width: ${props => sizeContainer[props.size] || sizeContainer['default'] };
+  height: ${props => sizeContainer[props.size] || sizeContainer['default'] };
   position: relative;
   /* overflow: hidden; */
 `;
 
 const RollBoxOne = styled.div`
-  width: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
-  height: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+  width: ${props => sizeItem[props.size] || sizeItem[props.size] };
+  height: ${props => sizeItem[props.size] || sizeItem[props.size] };
   background-color: ${props => props.color || '#00adb5'};
   animation: ${rollOne} ${props => props.speed || 3}s ease infinite;
   position: absolute;
@@ -79,27 +80,27 @@ const RollBoxOne = styled.div`
 `
 
 const RollBoxTwo = styled.div`
-  width: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
-  height: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+  width: ${props => sizeItem[props.size] || sizeItem[props.size] };
+  height: ${props => sizeItem[props.size] || sizeItem[props.size] };
   background-color: ${props => props.color || '#00adb5'};
   animation: ${rollTwo} ${props => props.speed || 3}s ease infinite;
   position: absolute;
-  left: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
-  bottom: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+  left: ${props => sizeItem[props.size] || sizeItem[props.size] };
+  bottom: ${props => sizeItem[props.size] || sizeItem[props.size] };
   transform-origin: left bottom;
 `
 
 const RollBoxMove = styled.div`
-  width: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
-  height: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+  width: ${props => sizeItem[props.size] || sizeItem[props.size] };
+  height: ${props => sizeItem[props.size] || sizeItem[props.size] };
   background-color: ${props => props.color || '#00adb5'};
   animation: ${moveLeft} ${props => props.speed || 3}s ease infinite;
   position: absolute;
-  left: ${props => props.size === 'small' ? 10 : (props.size === 'large' ? 14 : 12)}px;
+  left: ${props => sizeItem[props.size] || sizeItem[props.size] };
   bottom: 0;
 `
 
-const RollBoxLoading = ({ style, color, speed, size }) => {
+const RollBoxLoading = ({ style = commonStyle, color, speed, size = 'default'}) => {
   return (
     <LoadContainer style={style} size={size}>
       <RollBoxOne size={size} color={color} speed={speed}/>

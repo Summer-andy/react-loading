@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { commonStyle } from '../utils/style';
 
 const rotate = keyframes`
   50% {
@@ -68,7 +69,7 @@ const HalfCircle = styled.div`
   border-left-color: ${props => props.color || '#00adb5'};
 `
 
-const SemipolarLoading = ({ style, color, speed, size }) => {
+const SemipolarLoading = ({ style = commonStyle, color, speed, size = 'default'}) => {
   return (
     <LoadContainer style={style} speed={speed} size={size}>
       {
