@@ -1,3 +1,7 @@
+body {
+  margin: 0 !important;
+}
+
 @keyframes hideIndex {
   0%{ opacity: 0; transform: translate(0, 50px) }
 	100%{opacity: 1; transform: translate(0, 0) }
@@ -8,8 +12,6 @@
   width: calc(100vw);
   min-height: 1000px;
   min-width: 600px;
-  margin-top: -8px;
-  margin-left: -8px;
   background: #090920;
   overflow-x: hidden;
   .modal {
