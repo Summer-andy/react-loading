@@ -21,6 +21,7 @@ const LoadingContainer = styled.div`
 const load = styled.div`
   width: ${props => sizeItem[props.size] || sizeItem['default'] };
   height: ${props => sizeItem[props.size] || sizeItem['default'] };
+  margin-top: calc(50% -  ${props => sizeItem[props.size] || sizeItem['default'] } / 2);
   background-color: ${props => props.color || '#00adb5'};
   border-radius: 100%;
   display: inline-block;
