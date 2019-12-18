@@ -57,9 +57,9 @@ import { BoxLoading } from 'react-loadingg';
 | BlockLoading         | 🚧    | ✅    | ✅   | ✅    | 
 | BlockReserveLoading  | ✅    | ✅    | ✅   | ✅    | 
 | BoxLoading           | ✅    | ✅    | ✅   | ✅    | 
-| CircleLoading        | ✅    | ✅    | 🚧   | ✅    | 
+| CircleLoading        | ✅    | ✅    | ✅   | ✅    | 
 | CircleToBlockLoading | ✅    | ✅    | ✅   | ✅    | 
-| CommonLoading        | ✅    | 🚧    | 🚧   | ✅    | 
+| CommonLoading        | ✅    | ✅    | ✅   | ✅    | 
 | DisappearedLoading   | ✅    | ✅    | ✅   | ✅    | 
 | LoopCircleLoading    | ✅    | ✅    | ✅   | ✅    | 
 | NineCellLoading      | ✅    | ✅    | ✅   | ✅    | 
@@ -79,7 +79,7 @@ import { BoxLoading } from 'react-loadingg';
 | RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
 | PointSpreadLoading   | ✅    | ✅    | ✅   | ✅    |
-| ThreeHorseLoading   | ✅    | ✅    | ✅   | ✅    |
+| ThreeHorseLoading   | ✅    | ✅    | 🚧   | ✅    |
 | PassThrouthLoading   | ✅    | ✅    | ✅   | ✅    |
 #### ⌨️ Participate in development
 

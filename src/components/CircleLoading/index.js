@@ -1,56 +1,57 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { commonStyle } from '../utils/style';
+import { commonStyle , sizeItem} from '../utils/style';
 
-const animate = keyframes`
-  0% {
-    transform: rotate(0);
+const load = keyframes`
+  0%{
+    opacity: 1;
+    transform: scale(1);
   }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-`
-
-const LoadingContainer = styled.div`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: rgba(0, 169, 178, 0.2);
-  &::before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    background-color: ${props => props.color || '#00adb5'};
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    z-index: 1;
-    transform-origin: left bottom;
-    animation: ${animate} ${props => props.speed || 1}s infinite linear;
-  }
-  &::after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-color:  ${props => props.inColor || '#fff'};
-    z-index: 2;
-    border-radius: 50%;
+  100%{
+      opacity: 0;
+      transform: rotate(90deg) scale(.3);
   }
 `;
 
-const CircleLoading = ({ style = commonStyle, color, inColor, speed }) => {
+const LoadingContainer = styled.div`
+  width: 100px;
+  height: 100px;
+`;
+
+const ItemSpan = styled.span`
+  display: inline-block;
+  height: ${props => sizeItem[props.size] || sizeItem['default']};
+  width: ${props => sizeItem[props.size]|| sizeItem['default']};
+  margin-top: 50%;
+  margin-right: 5px;
+  background: ${props => props.color || '#00adb5'};
+  transform-origin: right bottom;
+  animation: ${load} ${props => props.speed || 2}s ease infinite;
+`;
+
+const ItemSpan1 = styled(ItemSpan)`
+  animation-delay: 0.2s;
+`;
+
+const ItemSpan2 = styled(ItemSpan)`
+  animation-delay: 0.4s;
+`;
+
+const ItemSpan3 = styled(ItemSpan)`
+  animation-delay: 0.6s;
+`;
+const ItemSpan4 = styled(ItemSpan)`
+  animation-delay: 0.8s;
+`;
+
+const CircleLoading = ({ style = commonStyle, color, speed, size = 'default' }) => {
   return (
-    <LoadingContainer style={style} color={color} inColor={inColor} speed={speed} />
+    <LoadingContainer style={style}>
+      <ItemSpan1 color={color} speed={speed} size={size} />
+      <ItemSpan2 color={color} speed={speed} size={size} />
+      <ItemSpan3 color={color} speed={speed} size={size} />
+      <ItemSpan4 color={color} speed={speed} size={size} />
+    </LoadingContainer>
   );
 };
 

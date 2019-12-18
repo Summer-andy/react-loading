@@ -99,7 +99,7 @@ const DemoContainer = () => {
       </div>
       <div className="component">
         <div className="item" onClick={() => setName('CommonLoading')}>
-          <CommonLoading  speed={1} color={color}/>
+          <CommonLoading  speed={2} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('NineCellLoading')}>
           <NineCellLoading  speed={1.5} color={color} size="small"/>
@@ -129,7 +129,7 @@ const DemoContainer = () => {
           <TouchBallLoading  color={color}/>
         </div>
         <div className="item"  onClick={() => setName('TransverseLoading')}>
-          <TransverseLoading style={{ ...style, marginTop: 60 }} color={color}/>
+          <TransverseLoading style={{ ...style }} color={color}/>
         </div>
         <div className="item"  onClick={() => setName('WaveLoading')}>
           <WaveLoading  color={color}/>
