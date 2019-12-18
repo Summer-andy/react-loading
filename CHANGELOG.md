@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/sixiaodong123/react-loading/compare/v1.6.1...v1.6.2) (2019-12-18)
+
+
+
 ### [1.6.1](https://github.com/sixiaodong123/react-loading/compare/v1.6.1-alpha.3...v1.6.1) (2019-12-18)
 
 
