@@ -34,13 +34,13 @@ const ItemFour = styled(Item)`
   animation: ${ props => animateFour(props.color || '#00adb5')} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
-const BlockLoading = ({ style = commonStyle, speed, size="default" }) => {
+const BlockLoading = ({ style = commonStyle, speed, size="default", color }) => {
   return (
     <LoadContainer style={style} speed={speed} size={size}>
-      <ItemFirst speed={speed} size={size}></ItemFirst>
-      <ItemTwo speed={speed} size={size}></ItemTwo>
-      <ItemFour speed={speed} size={size}></ItemFour>
-      <ItemThree speed={speed} size={size}></ItemThree>
+      <ItemFirst speed={speed} size={size} color={color}></ItemFirst>
+      <ItemTwo speed={speed} size={size} color={color}></ItemTwo>
+      <ItemFour speed={speed} size={size} color={color}></ItemFour>
+      <ItemThree speed={speed} size={size} color={color}></ItemThree>
     </LoadContainer>
   );
 };

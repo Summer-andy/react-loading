@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, number, radios } from '@storybook/addon-knobs';
+import { withKnobs, number, radios, text } from '@storybook/addon-knobs';
 import { BlockLoading } from '~/components';
 import Container from './compoment/Container';
 storiesOf('BlockLoading', module)
@@ -19,10 +19,11 @@ storiesOf('BlockLoading', module)
         },
         'default'
       );
+      color = text('颜色')
       speed = number('动画速度(s)')
       return (
         <Container>
-          <BlockLoading size={size} speed={speed}></BlockLoading>
+          <BlockLoading size={size} speed={speed} color={color}></BlockLoading>
         </Container>
       );
     }
