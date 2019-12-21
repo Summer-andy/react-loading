@@ -27,7 +27,9 @@ import {
   RectGraduallyShowLoading,
   PointSpreadLoading,
   ThreeHorseLoading,
-  PassThrouthLoading
+  PassThrouthLoading,
+  BatteryLoading,
+  CoffeeLoading
 } from '~/components';
 import './style.scss';
 
@@ -183,7 +185,12 @@ const DemoContainer = () => {
         <div className="item"  onClick={() => setName('PassThrouthLoading')}>
           <PassThrouthLoading  speed={2} color={color} size="default"/>
         </div>
-
+        <div className="item"  onClick={() => setName('ThreeHorseLoading')}>
+          <BatteryLoading  speed={2} color={color} size="small"/>
+        </div>
+        <div className="item"  onClick={() => setName('PassThrouthLoading')}>
+          <CoffeeLoading  speed={2} color={color} size="small"/>
+        </div>
       </div>
     </div>
   );

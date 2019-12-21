@@ -19,74 +19,74 @@ const Rotate = keyframes`
   }
 `;
 
-const animateFirst = keyframes`
+const animateFirst = color => keyframes`
   0% {
     background: ${$InColor};
   }
   25% {
-    background: ${$color};
+    background: ${color};
   }
   50% {
-    background: ${$color};
+    background: ${color};
   }
   75% {
-    background: ${$color};
+    background: ${color};
   }
   100% {
     background: ${$InColor};
   }
 `
 
-const animateTwo = keyframes`
+const animateTwo = color =>  keyframes`
   0% {
-    background: ${$color};
+    background: ${color};
   }
   25% {
     background: ${$InColor};
   }
   50% {
-    background: ${$color};
+    background: ${color};
   }
   75% {
-    background: ${$color};
+    background: ${color};
   }
   100% {
-    background: ${$color};
+    background: ${color};
   }
 `
 
-const animateThree = keyframes`
+const animateThree = color =>  keyframes`
   0% {
-    background: ${$color};
+    background: ${color};
   }
   25% {
-    background: ${$color};
+    background: ${color};
   }
   50% {
     background: ${$InColor};
   }
   75% {
-    background: ${$color};
+    background: ${color};
   }
   100% {
-    background: ${$color};
+    background: ${color};
   }
 `
-const animateFour = keyframes`
+const animateFour = color =>  keyframes`
   0% {
-    background: ${$color};
+    background: ${color};
   }
   25% {
-    background: ${$color};
+    background: ${color};
   }
   50% {
-    background: ${$color};
+    background: ${color};
   }
   75% {
     background: ${$InColor};
   }
   100% {
-    background: ${$color};
+    background: ${color};
   }
 `
 
