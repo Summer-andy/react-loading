@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3-alpha.1](https://github.com/sixiaodong123/react-loading/compare/v1.6.3-alpha.0...v1.6.3-alpha.1) (2019-12-21)
+
+
+### Bug Fixes
+
+* 修复BlockLoading无法传递颜色 ([1e359f7](https://github.com/sixiaodong123/react-loading/commit/1e359f7))
+
+
+
 ### [1.6.3-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.2...v1.6.3-alpha.0) (2019-12-21)
 
 
