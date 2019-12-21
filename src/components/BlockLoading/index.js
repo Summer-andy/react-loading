@@ -19,19 +19,19 @@ const Item = styled.div`
 `;
 
 const ItemFirst = styled(Item)`
-  animation: ${animateFirst} ${props => props.speed / 4 || 2}s infinite ease-in-out;
+  animation: ${props => animateFirst(props.color || '#00adb5')} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
 const ItemTwo = styled(Item)`
-  animation: ${animateTwo} ${props => props.speed / 4 || 2}s infinite ease-in-out;
+  animation: ${props => animateTwo(props.color || '#00adb5')} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
 const ItemThree = styled(Item)`
-  animation: ${animateThree} ${props => props.speed / 4 || 2}s infinite ease-in-out;
+  animation: ${ props => animateThree(props.color || '#00adb5')} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
 const ItemFour = styled(Item)`
-  animation: ${animateFour} ${props => props.speed / 4 || 2}s infinite ease-in-out;
+  animation: ${ props => animateFour(props.color || '#00adb5')} ${props => props.speed / 4 || 2}s infinite ease-in-out;
 `;
 
 const BlockLoading = ({ style = commonStyle, speed, size="default" }) => {

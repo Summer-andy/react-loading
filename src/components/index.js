@@ -26,3 +26,5 @@ export { default as RectGraduallyShowLoading } from './RectGraduallyShowLoading'
 export { default as PointSpreadLoading } from './PointSpreadLoading';
 export { default as ThreeHorseLoading } from  './ThreeHorseLoading';
 export { default as PassThrouthLoading } from './PassThrouthLoading'
+export { default as CoffeeLoading } from './CoffeeLoading'
+export { default as BatteryLoading } from './BatteryLoading'

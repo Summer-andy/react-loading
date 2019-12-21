@@ -54,7 +54,7 @@ import { BoxLoading } from 'react-loadingg';
 | components           | color | speed | size  | style | 
 | -------------------- | ----- | ----- | ----- | ----- | 
 | BabelLoading         | ✅    | ✅    | ✅   | ✅    |
-| BlockLoading         | 🚧    | ✅    | ✅   | ✅    | 
+| BlockLoading         | ✅    | ✅    | ✅   | ✅    | 
 | BlockReserveLoading  | ✅    | ✅    | ✅   | ✅    | 
 | BoxLoading           | ✅    | ✅    | ✅   | ✅    | 
 | CircleLoading        | ✅    | ✅    | ✅   | ✅    | 
@@ -79,8 +79,10 @@ import { BoxLoading } from 'react-loadingg';
 | RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
 | PointSpreadLoading   | ✅    | ✅    | ✅   | ✅    |
-| ThreeHorseLoading   | ✅    | ✅    | 🚧   | ✅    |
+| ThreeHorseLoading   | ✅    | ✅    | ✅   | ✅    |
 | PassThrouthLoading   | ✅    | ✅    | ✅   | ✅    |
+| CoffeeLoading   | ✅    | ✅    | ✅   | ✅    |
+| BatteryLoading   | ✅    | ✅    | ✅   | ✅    |
 #### ⌨️ Participate in development
 
 Running the project for the first time

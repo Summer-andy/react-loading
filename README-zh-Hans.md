@@ -52,7 +52,7 @@ import { BoxLoading } from 'react-loadingg';
 | 组件                 | color | speed | size  | style | 
 | -------------------- | ----- | ----- | ----- | ----- | 
 | BabelLoading         | ✅    | ✅    | ✅   | ✅    |
-| BlockLoading         | 🚧    | ✅    | ✅   | ✅    | 
+| BlockLoading         | ✅    | ✅    | ✅   | ✅    | 
 | BlockReserveLoading  | ✅    | ✅    | ✅   | ✅    | 
 | BoxLoading           | ✅    | ✅    | ✅   | ✅    | 
 | CircleLoading        | ✅    | ✅    | ✅   | ✅    | 
@@ -77,8 +77,10 @@ import { BoxLoading } from 'react-loadingg';
 | RollBoxLoading       | ✅    | ✅    | ✅   | ✅    |
 | RectGraduallyShowLoading   | ✅    | ✅    | ✅   | ✅    |
 | PointSpreadLoading   | ✅    | ✅    | ✅   | ✅    |
-| ThreeHorseLoading   | ✅    | ✅    | 🚧   | ✅    |
+| ThreeHorseLoading   | ✅    | ✅    | ✅   | ✅    |
 | PassThrouthLoading   | ✅    | ✅    | ✅   | ✅    |
+| CoffeeLoading   | ✅    | ✅    | ✅   | ✅    |
+| BatteryLoading   | ✅    | ✅    | ✅   | ✅    |
 #### ⌨️ 组件开发
 
 首次运行项目
