@@ -1,6 +1,6 @@
 {
   "name": "react-loadingg",
-  "version": "1.6.3-alpha.2",
+  "version": "1.6.3-alpha.3",
   "description": "A React component library.",
   "main": "lib/index.js",
   "publishConfig": {
@@ -9,8 +9,9 @@
   "author": "Andy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sixiaodong123/react-loading"
+    "url": "git+https://github.com/sixiaodong123/react-loading.git"
   },
+  "license": "MIT",
   "scripts": {
     "prepare": "npm run build",
     "predev": "yarn install --silent",
