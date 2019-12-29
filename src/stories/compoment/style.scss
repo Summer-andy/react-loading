@@ -3,8 +3,14 @@ body {
 }
 
 @keyframes hideIndex {
-  0%{ opacity: 0; transform: translate(0, 50px) }
-	100%{opacity: 1; transform: translate(0, 0) }
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 .demo-container {
@@ -23,20 +29,20 @@ body {
       height: 300px;
       position: fixed;
       animation: hideIndex 0.3s;
-      background:rgba(29,29,66,0.5);
+      background: rgba(29, 29, 66, 0.5);
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
       margin: auto;
       z-index: 9999;
-      b:nth-of-type(1){
+      b:nth-of-type(1) {
         color: #fff;
         position: relative;
         top: 20px;
         left: 20px;
       }
-      b:nth-of-type(2){
+      b:nth-of-type(2) {
         color: #fff;
         position: absolute;
         top: 20px;
@@ -52,23 +58,23 @@ body {
         margin: 16px auto;
         > div:nth-of-type(1) {
           color: snow;
-        text-align: left;
-        padding: 10px;
+          text-align: left;
+          padding: 10px;
         }
         > div:nth-of-type(2) {
           color: paleturquoise;
-        text-align: left;
-        padding: 10px;
+          text-align: left;
+          padding: 10px;
         }
         > div:nth-of-type(3) {
           color: springgreen;
-        text-align: left;
-        padding: 10px;
+          text-align: left;
+          padding: 10px;
         }
         > div:nth-of-type(4) {
           color: salmon;
-        text-align: left;
-        padding: 10px;
+          text-align: left;
+          padding: 10px;
         }
       }
     }
@@ -82,7 +88,7 @@ body {
     > div:nth-of-type(1) {
       width: 100px;
       height: 60px;
-      color: #FFF;
+      color: #fff;
       line-height: 60px;
       font-size: 1.4rem;
       font-family: Arial, Helvetica, sans-serif;
@@ -107,7 +113,7 @@ body {
     > div:nth-of-type(2) {
       width: 100px;
       height: 60px;
-      color: #FFF;
+      color: #fff;
       line-height: 60px;
       font-size: 1.4rem;
       font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +133,7 @@ body {
     > div:nth-of-type(3) {
       width: 100px;
       height: 60px;
-      color: #FFF;
+      color: #fff;
       margin: auto;
       position: absolute;
       right: 20%;
@@ -141,7 +147,7 @@ body {
         background: #fff;
       }
       img:hover {
-        animation: animate  3s linear infinite ;
+        animation: animate 3s linear infinite;
         filter: opacity(50%);
       }
     }
@@ -170,40 +176,43 @@ body {
     min-height: 500px;
     margin-left: 10%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     .item {
-      width: 20%;
-      height: 150px;
+      width: 32%;
+      height: 200px;
       position: relative;
+      background: #080915;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      // box-shadow: 0px 0px 30px 1px #5d5b6a inset;
+      box-shadow: 0px 0px 30px 1px #4a47a3 inset;
+
+
     }
     .item:hover {
-
       background: #18193a;
     }
   }
 }
 
-
-
 ::-webkit-scrollbar-track-piece {
-	background-color:#090a1f;
-  border-left:1px solid #090a1f;
+  background-color: #090a1f;
+  border-left: 1px solid #090a1f;
   border-radius: 10px;
 }
 ::-webkit-scrollbar {
-	width:1px;
-	height:1px;
+  width: 1px;
+  height: 1px;
 }
 ::-webkit-scrollbar-thumb {
-	background-color:#090a1f;
-	background-clip:padding-box;
-  border:1px solid #090a1f;
+  background-color: #090a1f;
+  background-clip: padding-box;
+  border: 1px solid #090a1f;
   border-radius: 10px;
-	min-height:2px;
+  min-height: 2px;
 }
-
 
 @keyframes animate {
   to {

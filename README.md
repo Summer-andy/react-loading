@@ -83,6 +83,8 @@ import { BoxLoading } from 'react-loadingg';
 | PassThrouthLoading   | ✅    | ✅    | ✅   | ✅    |
 | CoffeeLoading   | ✅    | ✅    | ✅   | ✅    |
 | BatteryLoading   | ✅    | ✅    | ✅   | ✅    |
+| DiamonLoading   | ✅    | ✅    |  🔨  | ✅    |
+| EatLoading   | ✅    | ✅    |  🔨  | ✅    |
 #### ⌨️ Participate in development
 
 Running the project for the first time
