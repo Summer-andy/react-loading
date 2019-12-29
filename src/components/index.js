@@ -28,3 +28,5 @@ export { default as ThreeHorseLoading } from  './ThreeHorseLoading';
 export { default as PassThrouthLoading } from './PassThrouthLoading'
 export { default as CoffeeLoading } from './CoffeeLoading'
 export { default as BatteryLoading } from './BatteryLoading'
+export {  default as EatLoading } from './EatLoading'
+export { default as DiamonLoading } from './DiamondLoading'

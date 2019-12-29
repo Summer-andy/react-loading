@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.3-alpha.3...v1.7.0-alpha.0) (2019-12-29)
+
+
+### Features
+
+* 新增Loading动画, 修改主页 ([0908bd4](https://github.com/sixiaodong123/react-loading/commit/0908bd4))
+
+
+
 ### [1.6.3-alpha.3](https://github.com/sixiaodong123/react-loading/compare/v1.6.3-alpha.2...v1.6.3-alpha.3) (2019-12-22)
 
 
