@@ -8,7 +8,6 @@ const safePostCssParser = require('postcss-safe-parser');
 
 // Webpack is just a bunch of keys on module.exports!
 module.exports = function(webpackEnv) {
-  console.log(webpackEnv);
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
 
