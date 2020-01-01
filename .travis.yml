@@ -1,0 +1,15 @@
+---
+language: node_js
+node_js:
+  - '10'
+  - node
+
+cache:
+  directories:
+  - node_modules
+
+jobs:
+  include:
+    - stage: lint
+      script:
+        - npm run test
