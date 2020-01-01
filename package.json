@@ -38,7 +38,9 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "pre-commit": ["test"],
+  "pre-push": [
+    "test"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.5.5",
@@ -72,6 +74,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-safe-parser": "^4.0.1",
     "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
