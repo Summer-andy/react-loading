@@ -38,12 +38,6 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "pre-commit": ["test"],
   "devDependencies": {
     "@babel/cli": "^7.7.5",
