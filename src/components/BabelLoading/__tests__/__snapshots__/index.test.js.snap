@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa ieeOUE"
+  color="red"
+  size="default"
+  speed={1}
+  style={
+    Object {
+      "bottom": 0,
+      "left": 0,
+      "margin": "auto",
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+/>
+`;
