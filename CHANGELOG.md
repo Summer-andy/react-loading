@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/sixiaodong123/react-loading/compare/v1.7.0-alpha.0...v1.7.0) (2020-01-12)
+
+
+### Features
+
+* 新增BlockRotateLoading组件 ([98e14fa](https://github.com/sixiaodong123/react-loading/commit/98e14fa))
+
+
+
 ## [1.7.0-alpha.0](https://github.com/sixiaodong123/react-loading/compare/v1.6.3-alpha.3...v1.7.0-alpha.0) (2019-12-29)
 
 
