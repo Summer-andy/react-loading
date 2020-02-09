@@ -137,7 +137,7 @@ $ npm run release
 
 #### FAQ
 ##### 🛎 I just want to use ```BabelLoading```，but it seems that I have to `import` the whole `react-loadingg`:
-##### Try[babel-plugin-import](https://github.com/ant-design/babel-plugin-import), or load on demand in the following way
+##### Try[react-loading-demand](https://github.com/sixiaodong123/react-loading-demand), or load on demand in the following way
 ```
 import BabelLoading from 'react-loadingg/lib/BabelLoading'
 ```

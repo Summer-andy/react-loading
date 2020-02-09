@@ -135,7 +135,7 @@ $ npm run release
 
 #### FAQ
 ##### 🛎 我只想用一个```BabelLoading```，但似乎我必须 import 整个 react-loadingg:
-##### 试试[babel-plugin-import](https://github.com/ant-design/babel-plugin-import),或者用下面这种方式来按需加载
+##### 试试[react-loading-demand](https://github.com/sixiaodong123/react-loading-demand),或者用下面这种方式来按需加载
 
 ```
 import BabelLoading from 'react-loadingg/lib/BabelLoading'
