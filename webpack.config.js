@@ -74,17 +74,17 @@ module.exports = function(webpackEnv) {
     // dist is a common output folder, and it should be gitignored. The build can
     // be run after publishing so you don't wind up with it in source control
     output: {
-      path: path.resolve(__dirname, 'lib/'),
-      publicPath: '',
-      // You can do fun things here like use the [hash] keyword to generate unique
-      // filenames, but for this purpose hui.js is fine. This file and path will
-      // be what you put in package.json's "main" field
-      filename: 'hui.js',
-      // This field determines how things are importable when installed from other
-      // sources. UMD may not be correct now and there is an open issue to fix this,
-      // but until then, more reading can be found here:
-      // https://webpack.js.org/configuration/output/#output-librarytarget
-      libraryTarget: 'umd'
+      // path: path.resolve(__dirname, 'lib/'),
+      // publicPath: '',
+      // // You can do fun things here like use the [hash] keyword to generate unique
+      // // filenames, but for this purpose hui.js is fine. This file and path will
+      // // be what you put in package.json's "main" field
+      // filename: 'hui.js',
+      // // This field determines how things are importable when installed from other
+      // // sources. UMD may not be correct now and there is an open issue to fix this,
+      // // but until then, more reading can be found here:
+      // // https://webpack.js.org/configuration/output/#output-librarytarget
+      // libraryTarget: 'umd'
     },
     externals: {
       react: {
