@@ -19,6 +19,10 @@
 
 🎉 [查看 demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
 
+## 注意事项
+  
+  在1.7.4-alpha.3版本之后使用了typescript重构了项目。
+
 ## 快速使用
 
 #### 🛠 安装
