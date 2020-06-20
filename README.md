@@ -21,6 +21,11 @@
 
 
 🎉 [check demo](http://139.196.82.33:8080/iframe.html?id=demo--demo)
+
+## Warning
+
+After version 1.7.4-alpha.3, the project was refactored with typescript. 
+
 ## Quick Start
 
 #### 🛠 Install
