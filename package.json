@@ -70,7 +70,7 @@
     "less-loader": "^5.0.0",
     "lint-staged": "^8.1.5",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-safe-parser": "^4.0.1",
     "pre-commit": "^1.2.2",
