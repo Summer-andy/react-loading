@@ -54,7 +54,7 @@
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addon-storysource": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9",
+    "@storybook/react": "^6.5.13",
     "@tulipjs/eslint-config": "^1.1.1",
     "babel-jest": "^24.3.1",
     "babel-loader": "^8.0.6",
